@@ -130,12 +130,12 @@ update()
 
 # Configuring tenant for Call Delivery
 
-⚠️ If you are using your Gold Tenant you can use this link to download the [Audio Files](https://webexcc.github.io/assets/files/lab_wav.zip){:target="\_blank"}. Those files are already pre-uploaded on the Lab Tenant.
+⚠️ If you are using your Gold Tenant you can use this link to download the [Audio Files]({{site.baseurl}}/assets/files/lab_wav.zip){:target="\_blank"}. Those files are already pre-uploaded on the Lab Tenant.
 
 ### Create a queue
 
  1. <details> <summary>In the left pane of Control Hub > Select Contact Center > Queues (click for details)</summary>
-     <img src="/assets/images/IVR/openQueueNew.gif" style="height:350">
+     <img src="{{site.baseurl}}/assets/images/IVR/openQueueNew.gif" style="height:350">
      </details>
 
 1. Click Create Queue
@@ -181,24 +181,24 @@ update()
     ---
 
 ### Create your first flow
-1. Download the [Flow Template](https://webexcc.github.io/../../../assets/files/flow_template.json){:target="\_blank"}
+1. Download the [Flow Template]({{site.baseurl}}/assets/files/flow_template.json){:target="\_blank"}
    > The file will open in a separate window.  
    >
    >> <details> <summary>If using Firefox, Select the save option. (click for details) </summary>
    >>
-   >> <img src="/assets/images/IVR/saveJson.gif">
+   >> <img src="{{site.baseurl}}/assets/images/IVR/saveJson.gif">
    >>
    >> </details>
    >>
    >> <details> <summary>If using Chrome or Edge, right click and select save. (click for details)</summary>
    >>
-   >> <img src="/assets/images/IVR/saveJsonChrome.gif" width="243">
+   >> <img src="{{site.baseurl}}/assets/images/IVR/saveJsonChrome.gif" width="243">
    >>
    >> </details>
    >>
    >> <details> <summary>If using Chrome on a MAC, click the share icon in the URL bar and select save. (click for details)</summary>
    >>
-   >> <img src="/assets/images/IVR/saveJsonChromeMac.gif" width="243">
+   >> <img src="{{site.baseurl}}/assets/images/IVR/saveJsonChromeMac.gif" width="243">
    >>
    >> </details>
    >>
@@ -321,7 +321,7 @@ update()
    > 
    > Turn off Validation 
    >
-   > [Compare](https://webexcc.github.io/../../../assets/images/IVR/comfortMessage.JPG){:target="\_blank"}
+   > [Compare]({{site.baseurl}}/assets/images/IVR/comfortMessage.JPG){:target="\_blank"}
    >
    > ---
 8. Place a test call to <w class= "DN_out" >Your Support Number</w>
@@ -331,7 +331,7 @@ update()
 
 ## Creating alternating comfort messages while a call is in queue
 1. Create a new flow variable: 
-    > Click on the cog in the lower left corner of the canvas <img src="/assets/images/IVR/flowCog.JPG" height="40"> (or on the background of the flow) 
+    > Click on the cog in the lower left corner of the canvas <img src="{{site.baseurl}}/assets/images/IVR/flowCog.JPG" height="40"> (or on the background of the flow)
     >
     > Click Add Flow Variables
     >> Name: Loop_Count
@@ -372,7 +372,7 @@ update()
 10. Connect the True node edge from evenOdd to comfortMessage
 11. Connect the False node edge from evenOdd to websiteMessage
 12. Connect the end of websiteMessage node to the Play Music node
-13. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/altMessages.JPG){:target="\_blank"}
+13. Publish your flow [Compare]({{site.baseurl}}/assets/images/IVR/altMessages.JPG){:target="\_blank"}
 14. Place a test call to <w class= "DN_out" >Your Support Number</w>
     > Did you hear the comfort message and website message alternate every 15 seconds?
     >
@@ -471,7 +471,7 @@ update()
     >
    ---
 16. Connect advance to positionCheck  
-17. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/aniRead.JPG){:target="\_blank"}
+17. Publish your flow [Compare]({{site.baseurl}}/assets/images/IVR/aniRead.JPG){:target="\_blank"}
 18. Place a test call to <w class= "DN_out" >Your Support Number</w>
     > When you are given the option for a callback, press 1.
     >> Did you hear your 10 digit callback number being read back?
@@ -543,7 +543,7 @@ update()
     > ---
 12. Connect resetPosition to rcontext
 13. Connect rcontext to rDigit_set
-14. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/changeNumber.JPG){:target="\_blank"}
+14. Publish your flow [Compare]({{site.baseurl}}/assets/images/IVR/changeNumber.JPG){:target="\_blank"}
 15. Place a test call to <w class= "DN_out" >Your Support Number</w>
     > When you are given the option for a callback, press 1.
     >
@@ -674,7 +674,7 @@ update()
 25. Connect callback to callbackConfirm
 26. Connect callbackConfirm to Disconnect Contact
 27. Connect the No-Input Timeout and Unmatched Entry node edges from needExt to Disconnect Contact
-28. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/collectExt.JPG){:target="\_blank"}
+28. Publish your flow [Compare]({{site.baseurl}}/assets/images/IVR/collectExt.JPG){:target="\_blank"}
 29. Place a test call to <w class= "DN_out" >Your Support Number</w>
     > Press one to receive a callback 
     >
@@ -731,5 +731,4 @@ update()
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>	
-
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>

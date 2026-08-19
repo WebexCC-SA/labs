@@ -74,40 +74,40 @@ In this lab, we will configure all the required elements to collect and view end
 ### Create a survey
 
 1. Click on Contact Center under Services from Control Hub
-   > <img src="/assets/images/EM/contactCenter.gif" width="200">
+   > <img src="{{site.baseurl}}/assets/images/EM/contactCenter.gif" width="200">
 2. Under Contact Center, click on Surveys
-   > <img src="/assets/images/EM/survey.gif" width="200">
+   > <img src="{{site.baseurl}}/assets/images/EM/survey.gif" width="200">
 3. Click the "Create new survey" button on the top-right corner of the Survey page
    > Select Survey type as IVR
    >
-   > > <img src="/assets/images/EM/surveyType.gif">
+   > > <img src="{{site.baseurl}}/assets/images/EM/surveyType.gif">
    > >
    > > Provide a name for your survey appended with your Attendee ID
-   > > <img src="/assets/images/EM/surveyName.gif">
+   > > <img src="{{site.baseurl}}/assets/images/EM/surveyName.gif">
    > >
    > > Choose the additional languages for the survey from the drop-down (optional)
-   > > <img src="/assets/images/EM/languageSupport.png">
+   > > <img src="{{site.baseurl}}/assets/images/EM/languageSupport.png">
    > >
    > > Click on Next
-4. Add audio files to the Welcome and Thank you notes ([Audio Files](https://webexcc.github.io/assets/files/Survey_wav.zip){:target="\_blank"})
+4. Add audio files to the Welcome and Thank you notes ([Audio Files]({{site.baseurl}}/assets/files/Survey_wav.zip){:target="\_blank"})
    > Click on the pencil icon to the right
    >
-   > >  <img src="/assets/images/EM/welcomeThankyou.gif">
+   > >  <img src="{{site.baseurl}}/assets/images/EM/welcomeThankyou.gif">
    > >
    > > Select Choose a file when the note expands, pick the audio file (Welcome.wav) and upload
-   > > <img src="/assets/images/EM/uploadWelcome.gif">
+   > > <img src="{{site.baseurl}}/assets/images/EM/uploadWelcome.gif">
    > >
    > > Repeat steps for Thank you note (Thankyou.wav)
 5. Add a question to your survey
    > Select the NPS question from the drop-down by clicking + Add a question
    >
-   > > <img src="/assets/images/EM/addNPS.gif" width="200">
+   > > <img src="{{site.baseurl}}/assets/images/EM/addNPS.gif" width="200">
    > >
-   > > Choose the corresponding audio file, nps.wav for the NPS question and upload ([Audio Files](https://webexcc.github.io/assets/files/Survey_wav.zip){:target="\_blank"})
-   > > <img src="/assets/images/EM/uploadNPS.gif">
+   > > Choose the corresponding audio file, nps.wav for the NPS question and upload ([Audio Files]({{site.baseurl}}/assets/files/Survey_wav.zip){:target="\_blank"})
+   > > <img src="{{site.baseurl}}/assets/images/EM/uploadNPS.gif">
    > >
    > > Under Question to show on reporting type the column name as "NPS Score"
-   > > <img src="/assets/images/EM/NPSReporting.gif">
+   > > <img src="{{site.baseurl}}/assets/images/EM/NPSReporting.gif">
 6. Update Error handling settings (optional)
    > Upload audio files for Invalid Input and Timeout by clicking on Choose a file under each section
    >
@@ -127,7 +127,7 @@ In this lab, we will configure all the required elements to collect and view end
 2. Introduce a Menu into your main flow to prompt the caller to opt-in for the survey in between the NewPhoneContact event and the Queue Contact node
    > Activity Label: surveyOptin
    >
-   > Prompt: OptinMenu.wav ([Audio Files](https://webexcc.github.io/assets/files/Survey_wav.zip){:target="\_blank"})
+   > Prompt: OptinMenu.wav ([Audio Files]({{site.baseurl}}/assets/files/Survey_wav.zip){:target="\_blank"})
    >
    > Make Prompt Interruptible: True
    >
@@ -165,7 +165,7 @@ In this lab, we will configure all the required elements to collect and view end
    >
    > Example Flow
    >
-   > > <img src="/assets/images/EM/surveyOptin.png">
+   > > <img src="{{site.baseurl}}/assets/images/EM/surveyOptin.png">
 5. Navigate to the Event Flows tab
 6. Add the Feedback V2 node
    > Connect the Feedback V2 node to the AgentDisconnected Activity
@@ -182,7 +182,7 @@ In this lab, we will configure all the required elements to collect and view end
 7. Complete the flow by adding a Disconnect Contact node after the Feedback V2 node
    > Example Flow
    >
-   > > <img src="/assets/images/EM/feedbackV2.png">
+   > > <img src="{{site.baseurl}}/assets/images/EM/feedbackV2.png">
 8. Validate and Publish the flow
 
 ---
@@ -204,11 +204,11 @@ In this lab, we will configure all the required elements to collect and view end
 
 1. Navigate to the Surveys page on Control Hub
 2. Click on the download button on the far right of your survey
-   > <img src="/assets/images/EM/downloadResponse.gif">
+   > <img src="{{site.baseurl}}/assets/images/EM/downloadResponse.gif">
 3. Select the date range for the survey response period as Last 7 days and click Download
-   > <img src="/assets/images/EM/downloadDate.gif">
+   > <img src="{{site.baseurl}}/assets/images/EM/downloadDate.gif">
 4. Verify your response in the excel sheet to the one you provided on the call
-   > <img src="/assets/images/EM/surveyReport.png">
+   > <img src="{{site.baseurl}}/assets/images/EM/surveyReport.png">
 
 ---
 
@@ -280,7 +280,7 @@ A comprehensive summary of the feature is available in the [Developer Portal](ht
 
 4. Click `Save`.
 
-![jdsprov](/assets/images/JDS/Provision_JDS.gif)
+![jdsprov]({{site.baseurl}}/assets/images/JDS/Provision_JDS.gif)
 
 > `Note:` JDS is already provisioned in the provided lab tenant, so you do not need to perform them. You may follow the above steps when provisioning for your own tenant.
 
@@ -303,7 +303,7 @@ Jouney project may be activated with the `Webex Contact Center connector`. This 
 
 5. Toggle the `Activate` connector in the Webex Contact Center section to ON.
 
-![jdsactivateconnector](/assets/images/JDS/jds_activate_connector.gif)
+![jdsactivateconnector]({{site.baseurl}}/assets/images/JDS/jds_activate_connector.gif)
 
 ### Add User Identities to a Journey Project
 
@@ -319,17 +319,17 @@ Jouney project may be activated with the `Webex Contact Center connector`. This 
    - If you want to add **multiple** email addresses, phone numbers or customer IDs, you need to **use the pipe “|” delimiter** between them. For example, try to add your phone number both with and without a plus sign.
    - For the **Id column**, make sure to leave each row `empty`. When you upload the CSV file, this field will auto-generate.
 
-   ![jdscreatedcsv](/assets/images/JDS/jds_created_csv.png)
+   ![jdscreatedcsv]({{site.baseurl}}/assets/images/JDS/jds_created_csv.png)
 
 5. Upload the **CSV file** that you created for customer identities, and then click `Next`.
 
 6. If the CSV file is valid, a window appears to show you if the import was successful. Once you're done, select `Close`. You should see a list of all the uploaded customer identities.
 
-![jdsuploadidentities](/assets/images/JDS/jds_upload_ids.gif)
+![jdsuploadidentities]({{site.baseurl}}/assets/images/JDS/jds_upload_ids.gif)
 
 ### Enable Customer Journey Widget on an Agent Desktop
 
-1. Download the following Desktop Layout JSON file [JDSDesktopLayout](/assets/files//JDSDesktopLayout10.json).
+1. Download the following Desktop Layout JSON file [JDSDesktopLayout]({{site.baseurl}}/assets/files//JDSDesktopLayout10.json).
 
 2. Sign in to Control Hub and go to `Contact Center > Desktop Layouts`.
 
@@ -341,7 +341,7 @@ Jouney project may be activated with the `Webex Contact Center connector`. This 
 
 6. Click `Save`.
 
-![jdsuploadwidget](/assets/images/JDS/jds_upload_widget.gif)
+![jdsuploadwidget]({{site.baseurl}}/assets/images/JDS/jds_upload_widget.gif)
 
 > `Note:` If you are interested in adding the CJDS Widget to your existing desktop layout in your own tenant, use the below code snippet.
 
@@ -392,7 +392,7 @@ Jouney project may be activated with the `Webex Contact Center connector`. This 
 
 Here is a screenshot of the block in place (notice it is after `IVR_TRASNCRIPT` and before `WXM_JOURNEY_TAB`).
 
-![JDSWidgetCode](/assets/images/JDS/JDS_Widget_Code.png)
+![JDSWidgetCode]({{site.baseurl}}/assets/images/JDS/JDS_Widget_Code.png)
 
 ### View Customer Journey Widget on an Agent desktop
 
@@ -404,15 +404,15 @@ The widget displays insights such as the number of times the customer has called
 
 The `progressive profile` allows for alignment of different phone numbers and emails under one profile, ensuring accurate and comprehensive interaction data.
 
-![JDSWidgetDesktop](/assets/images/JDS/jds_desktop_widget.gif)
+![JDSWidgetDesktop]({{site.baseurl}}/assets/images/JDS/jds_desktop_widget.gif)
 
 ## JDS APIs
 
 ### API Documentation & Definitions
 
-AS JDS is an **API-first solution**, there is a wide range of APIs available. All the APIs can be found in the [Developer Portal](https://developer.webex-cx.com/documentation/journey), where -as with all APIs- there is information on how to create the API request, the path/query parameters, the expected response as well as a sample code example. For more information on Webex Contact Center APIs & Authentication, you can follow and the complete the [API Lab - Lab 11](https://webexcc.github.io/pages/API/).
+AS JDS is an **API-first solution**, there is a wide range of APIs available. All the APIs can be found in the [Developer Portal](https://developer.webex-cx.com/documentation/journey), where -as with all APIs- there is information on how to create the API request, the path/query parameters, the expected response as well as a sample code example. For more information on Webex Contact Center APIs & Authentication, you can follow and the complete the [API Lab - Lab 11]({{site.baseurl}}/pages/API/).
 
-![JourneyDevPortal](/assets/images/JDS/JDS_Dev_Portal.png)
+![JourneyDevPortal]({{site.baseurl}}/assets/images/JDS/JDS_Dev_Portal.png)
 
 To be able to understand all the capabilities these APIs offer, it is important to become familiar with a few terms used in them:
 
@@ -434,20 +434,20 @@ As there a lot of different APIs available in JDS, to make the introduction to t
 1. Download the JDS Postman collection, by going to the [GitHub samples page](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/customer-journey-samples/cjds-postman-example/JDS%20CiscoLive.postman_collection.json).
 
 2. Click on **Download raw file**.
-   ![JDSDownloadRaw](/assets/images/JDS/JDSDownloadRaw.png)
+   ![JDSDownloadRaw]({{site.baseurl}}/assets/images/JDS/JDSDownloadRaw.png)
 
 3. Open the `Postman` app and click on the **Import** button.
 
 4. Select the **downloaded JSON file** in the appeared window.
-   ![JDSImport](/assets/images/JDS/JDSImport.png)
+   ![JDSImport]({{site.baseurl}}/assets/images/JDS/JDSImport.png)
 
 5. Once the JDS collection is imported, select the root folder of the imported collection in the left menu, then navigate to the **Variables**, and define the values.
 
 6. Once the values are defined, click the **Save** button.
-   ![JDSSave](/assets/images/JDS/JDSSave.png)
+   ![JDSSave]({{site.baseurl}}/assets/images/JDS/JDSSave.png)
 
 7. Go to **Authorization** and click on **Get New Access Token** button. The Postman will redirect you to the Auth page where you need to define your Admin account which was used for the App creation in the dev portal. As a result, you should get the message **Authentication complete**. Click **Proceed** and on the next page click on **Use Token** button.
-   ![JDSAuth](/assets/images/JDS/authJDS.gif)
+   ![JDSAuth]({{site.baseurl}}/assets/images/JDS/authJDS.gif)
 
 After successfully saving your JDS API collection in Postman, you can also check on the following video that shows how to use combinations of these APIs to manage your JDS profiles and templates.
 
@@ -469,7 +469,7 @@ Firstly, we will try to **add one more alias** to a user we created previously.
 
 4. On the top-right, click on **Try Out**.
 
-   ![TryOut](/assets/images/JDS/TryOut.png)
+   ![TryOut]({{site.baseurl}}/assets/images/JDS/TryOut.png)
 
 5. We can see that we need to fill some parameters to be able to run this API.
 
@@ -478,7 +478,7 @@ Firstly, we will try to **add one more alias** to a user we created previously.
 
 6. Fill these parameters and click on `Run`. Response should be like below:
 
-![JDS_IdentityAlias_Response](/assets/images/JDS/JDS_IdentityAlias_Response.png)
+![JDS_IdentityAlias_Response]({{site.baseurl}}/assets/images/JDS/JDS_IdentityAlias_Response.png)
 
 7. As you can see, response has a lot of information. For now, we are interested in the **ID** only.
 
@@ -488,7 +488,7 @@ Firstly, we will try to **add one more alias** to a user we created previously.
 
 10. In the **Request Body**, `delete` all the other parameters and only keep email (as per image). Add another email address to be linked with that person and click on `Run`. Output should be similar to below:
 
-![JDS_Identity_Response](/assets/images/JDS/JDS_Identity_Response.png)
+![JDS_Identity_Response]({{site.baseurl}}/assets/images/JDS/JDS_Identity_Response.png)
 
 11. If you go back to the **Customer Journey Data page** in Control Hub, you should see the new email address added.
 
@@ -519,7 +519,7 @@ Firstly, we will try to **add one more alias** to a user we created previously.
 
 16. If you check the Journey now, you should also see the event we created above:
 
-![WebpageVisited](/assets/images/JDS/WebpageVisited.png)
+![WebpageVisited]({{site.baseurl}}/assets/images/JDS/WebpageVisited.png)
 
 And this is where the true “power” of JDS API lies. We can customize this Event API as much as we want and track any kind of engagement we had with this customer and present it to the agent.
 
@@ -532,7 +532,7 @@ A customer has contacted his travel service several times in the last couple of 
 > NOTE: This is an example from a specific Lab Tenant, you may need to update the WorkspaceID, PersonID or aliases values for your own scenario to work properly.
 > {: .block-warning }
 
-![QueueBasedPriority](/assets/images/JDS/QueueBasedPriority.png)
+![QueueBasedPriority]({{site.baseurl}}/assets/images/JDS/QueueBasedPriority.png)
 
 #### Task 1: Getting the total number of requests for the X days/hours
 
@@ -545,11 +545,11 @@ A customer has contacted his travel service several times in the last couple of 
 2. For verifying the profile view go to the Postman API **Get Progressive Profile View - journey-default-template2** and change the URL parameter from
    `journey-default-template2` to `journey-default-template1`. As the result you should get {{baseUrl}}/admin/v1/api/profile-view-template/workspace-id/{{workspaceId}}/template-id/journey-default-template1.
 
-![JDS_default_template_1](/assets/images/JDS/JDS_default_template_1.png)
+![JDS_default_template_1]({{site.baseurl}}/assets/images/JDS/JDS_default_template_1.png)
 
 3. If you are using a different tenant, you need to create the template with the name defined in the layout. In order to do it, go to **Create - journey-default-template2** API in Postman and replace the body with the following code:
 
-![JDS_default_template_2](/assets/images/JDS/JDS_default_template_2.png)
+![JDS_default_template_2]({{site.baseurl}}/assets/images/JDS/JDS_default_template_2.png)
 
 ```
 {
@@ -666,7 +666,7 @@ A customer has contacted his travel service several times in the last couple of 
 
 4. Now let's get the **PersonID**, by running the **Search for an Identity via aliases** API. Modify the URL in Postman and put the number **+3227045654** after the alias. You should get `GET {{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}/aliases/3227045654`
 
-![JDS_UseCase1_PersonID](/assets/images/JDS/JDS_UseCase1_PersonID.png)
+![JDS_UseCase1_PersonID]({{site.baseurl}}/assets/images/JDS/JDS_UseCase1_PersonID.png)
 
 5. Save the person ID, which you will need for the next API.
 
@@ -675,7 +675,7 @@ A customer has contacted his travel service several times in the last couple of 
 
 7. Run the API and check the response for the last 48 hours. The **result** is the total number of events for the last 2 days. We will use that value for the routing decision in the next task.
 
-![JDS_UseCase1_Progressive](/assets/images/JDS/JDS_UseCase1_Progressive.png)
+![JDS_UseCase1_Progressive]({{site.baseurl}}/assets/images/JDS/JDS_UseCase1_Progressive.png)
 
 #### Task 2: Adding JDS API Request to the Flow Designer
 
@@ -694,11 +694,11 @@ To begin with:
 
 > Note: For this example, we are using the temporary access tokens which will expire after 8-12 hours.
 
-![JDS_UseCase1_Token](/assets/images/JDS/JDS_UseCase1_Token.png)
+![JDS_UseCase1_Token]({{site.baseurl}}/assets/images/JDS/JDS_UseCase1_Token.png)
 
 4. Go back to the Flow Designer, you will need to create the following logic:
 
-![JDS_UseCase1_Flow](/assets/images/JDS/JDS_UseCase1_Flow.png)
+![JDS_UseCase1_Flow]({{site.baseurl}}/assets/images/JDS/JDS_UseCase1_Flow.png)
 
 5. Click on the main canvas and add 2 Flow Variables:
 
@@ -743,8 +743,6 @@ To begin with:
 
 3. Open **DEBUG** tool in the Flow Designer by clicking on **DEBUG** button and verify though which queue the 3rd call was delivered.
 
-![JDS_UseCase1_Debug](/assets/images/JDS/JDS_UseCase1_Debug.png)
-
 ### More Use Cases
 
 More use case samples that utilize the Customer Journey Data Services (JDS) can be found in the Cisco Webex Contact Center samples [GitHub page](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/customer-journey-samples).
@@ -755,4 +753,4 @@ We highly suggest you **bookmark** this page as more use cases will be added in 
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>

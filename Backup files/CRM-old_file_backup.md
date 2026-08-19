@@ -673,6 +673,5 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>	
-
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>
 

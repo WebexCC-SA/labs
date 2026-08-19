@@ -378,8 +378,7 @@ Follow the instructions in the video to use Postman and create mutiple sites usi
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>	
-
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>
 
 
 

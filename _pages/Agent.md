@@ -157,7 +157,7 @@ update()
 	<iframe src="https://app.vidcast.io/share/embed/dc341488-94ab-4659-8951-4b4ba1412373" width="100%" height="100%" title="Agent Desktop Interface" frameborder="0" loading="lazy" allowfullscreen style="position:absolute; top:0; left: 0"></iframe>
 </div>
 <br>
-![Image1](/assets/images/AgentDesktopOverview.png)
+![Image1]({{site.baseurl}}/assets/images/AgentDesktopOverview.png)
 
 
 The Agent Desktop is divided in **6 sections**. In the image above you can see a general view of the Agent Desktop and where each section is located. We explain them all shortly:
@@ -640,4 +640,4 @@ Below, you will find a breakdown of all possible data and type definitions that 
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>

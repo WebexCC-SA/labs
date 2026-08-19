@@ -76,7 +76,7 @@ This lab is designed to introduce the audience to the digital channels (Webex Co
 Webex Connect consists of 2 main components, Connect and Engage, which are directly integrated with the Webex Contact Center platform (as per the drawing).  
 The access to Webex Connect is restricted to Administrators only.
 
-![Architecture](/assets/images/DC_Architecture.png)
+![Architecture]({{site.baseurl}}/assets/images/DC_Architecture.png)
 
 **Connect** serves as the entry point for all the messages received through any digital channel (email, chat, SMS, Messenger Facebook, WhatsApp) and as the intelligence for routing them. It hosts most of the configuration the Admin will create: flows, assets, bots, scheduled events and webhooks.  
 The access to Connect happens via a dedicated URL which is generated and provided to the administrator at the time of the initial provisioning.  
@@ -93,23 +93,23 @@ Users in Engage are automatically synchronized with Webex Control Hub.
 -   Under ‘Services’ select ‘Contact Center’ > ‘Settings’ > ‘General’
 -   Verify under ‘Service Details’ > ‘Digital Channel’ is set to ‘IMI Digital’
 
-![Provisioning1](/assets/images/DC_Provisioning1.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Provisioning1.png)
 
 > In case the ‘Digital Channel’ section prompts a different value you will need to reach out Cisco for support to get this setting corrected before proceeding further.
 
 -   Under ‘Services’ select ‘Contact Center’ > ‘Settings’ > ‘Digital’
 -   Select the button ‘Provision Digital Channels’
 
-![Provisioning1](/assets/images/DC_Provisioning2.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Provisioning2.png)
 
 -   Then select from the list of administrators the account who will become the Owner of the new Webex Connect Tenant > Click on ‘Select
 
-![Provisioning1](/assets/images/DC_Provisioning3.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Provisioning3.png)
 
 -   Wait approximately 5 minute for the automated provisioning process to complete. After this time, the selected administrator will receive an activation email.
 -   Open the email and click on ‘JOIN THE TEAM’
 
-![Provisioning1](/assets/images/DC_Invite.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Invite.png)
 
 -   Follow the instructions to activate your account and set a local password.
 -   Once the activation is completed you will access the Connect portal > bookmark the website URL
@@ -123,19 +123,19 @@ Users in Engage are automatically synchronized with Webex Control Hub.
 -   Under ‘Services’ select ‘Contact Center’ > ‘Settings’ > ‘Digital’
 -   Verify Digital channels setup for Webex Contact Center is completed.
 
-![Provisioning1](/assets/images/DC_Provisioned1.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Provisioned1.png)
 
 -   Return to ‘Services’ select ‘Contact Center’ > ‘Settings’ > ‘General’ > ‘Advanced Configuration’ > Select ‘Go to Webex Contact Center Management Portal’ to cross launch to administration portal
 -   In Administration portal, select ‘New Digital Channels’ to cross launch into the new component ‘Engage’
 -   No additional login(or credentials) are required. The login to Engage portal should be seamless
 
-![Provisioning1](/assets/images/DC_Provisioned2.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Provisioned2.png)
 
 -   In Engage portal, select Users > Search
 -   Verify that users with Administrator and Premium Agent previleges are replicated with role type ‘Administrative’ and ‘Customer Care’ roles
 -   Please note that the user account with which you have logged in will not show up in the engage user list. This is expected behaviour.
 
-![Provisioning1](/assets/images/DC_Provisioned3.png)
+![Provisioning1]({{site.baseurl}}/assets/images/DC_Provisioned3.png)
 
 ---
 
@@ -414,14 +414,14 @@ Connect allows the Owner to create local users in containers called **Groups** a
 
 > Please contact the Partner Success team (PSM) if there are any challenges identifying the Connect Owner details
 
-![UserLogin](assets/images/DC_Login.png)
+![UserLogin]({{site.baseurl}}/assets/images/DC_Login.png)
 
 ## **4. Add new users with administrator role**
 
 -   Once logged in to Connect, go to ‘Settings’ > ‘Teammates’
 -   Add a new user (must be a working emailID) and select ‘Full access’ role and click ‘Invite user’
 
-![AddUser](assets/images/DC_AddUser.png)
+![AddUser]({{site.baseurl}}/assets/images/DC_AddUser.png)
 
 ## **5. New user activation**
 
@@ -431,7 +431,7 @@ Connect allows the Owner to create local users in containers called **Groups** a
 -   The user will automatically login into the Connect portal.
 -   The user will have to inform the tenant Owner about the successful creation of the account > the Owner will go to ‘Settings’ > ‘Teammates’ > click ‘Edit’ for the specified user > mark the checkbox for Decrypt Logs > click ‘Save’
 
-![UserActivation](assets/images/DC_UserActivation.png)
+![UserActivation]({{site.baseurl}}/assets/images/DC_UserActivation.png)
 
 
 ---
@@ -477,28 +477,28 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Configuration Order
 
-![ConfigOrder](/assets/images/DC_Lab_12.5_1.png)
+![ConfigOrder]({{site.baseurl}}/assets/images/DC_Lab_12.5_1.png)
  
 ## 1. Node Authorization for Webex CC Task and Engage nodes
 
 Webex Connect is required to provide a valid access token for using various Webex Contact Center and Webex Engage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 - To authorize a pre-built integration go to Assets -> Integrations. The integrations which are not yet authorized show the status as Authorization Pending.
 - In front of Webex CC Engage Click Actions -> Manage.
- ![Access](/assets/images/DC_Lab_12.5_2.gif)
+ ![Access]({{site.baseurl}}/assets/images/DC_Lab_12.5_2.gif)
 - On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
 - Click Action → Add Authorization associated with the WxCC Engage Authorisation, where Auth Type is oauth2 and Status is Authorization Pending.
- ![Authorization](/assets/images/DC_Lab_12.5_3.png)
+ ![Authorization]({{site.baseurl}}/assets/images/DC_Lab_12.5_3.png)
 - Enter the Authorization Name and click Authorize. In that example we use WxCC Engage Authorisation.
- ![Authorize](/assets/images/DC_Lab_12.5_4.png)
+ ![Authorize]({{site.baseurl}}/assets/images/DC_Lab_12.5_4.png)
 - Click on the back button for being redirected back to Integrations page and in front of Webex CC Task Click Actions → Manage.
- ![Manage](/assets/images/DC_Lab_12.5_5.gif)
+ ![Manage]({{site.baseurl}}/assets/images/DC_Lab_12.5_5.gif)
 - On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration. Click Action → Add Authorization associated with the WxCC Authorisation, where Auth Type is oauth2 and Status is Authorization Pending.
- ![Authorization](/assets/images/DC_Lab_12.5_6.png)
+ ![Authorization]({{site.baseurl}}/assets/images/DC_Lab_12.5_6.png)
 - Enter the Authorization Name (for example: WxCC Authorisation) and click Authorize. As the result the pop-up appears where you need to enter your Cisco admin email address and click Sign In.
- ![Authenticate](/assets/images/DC_Lab_12.5_7.png)
+ ![Authenticate]({{site.baseurl}}/assets/images/DC_Lab_12.5_7.png)
 - Click back button for being redirected back to Integrations page. Verify that the status of the authorizations is changed to Authorized.  
 
-![Authorize](/assets/images/DC_Lab_12.5_8.gif)
+![Authorize]({{site.baseurl}}/assets/images/DC_Lab_12.5_8.gif)
 
 ## 2. Setup Agents in the Management Portal
 
@@ -528,13 +528,13 @@ The users have the following pre-configuration
 - Click on + New Multimedia Profile to open Multimedia Profile configuration page.
 - Input Name as MMP.
 - In the Media Details section, select the blended multimedia profile and input 1 for Voice, 3 for Chat, 3 for Email, , 3 for Social Channel and click on Save button.
- ![MMP](/assets/images/DC_Lab_12.5_14.png)
+ ![MMP]({{site.baseurl}}/assets/images/DC_Lab_12.5_14.png)
 
 2. Create new Site
 - Navigate to Provisioning and select Site.
 - Click on + New Site button and provide the Name as Site.
 - Select MMP in the Multimedia Profile drop down and hit Save.
- ![Site](/assets/images/DC_Lab_12.5_15.png)
+ ![Site]({{site.baseurl}}/assets/images/DC_Lab_12.5_15.png)
 
 3. Create new Teams
 - Navigate to Provisioning and select Team.
@@ -544,7 +544,7 @@ The users have the following pre-configuration
 - Use the default Type Agent Based.
 - Select MMP in the Multimedia Profile drop-down.
 - Left as a default value Global Layout in the Desktop Layout drop-down and hit Save.
-  ![Team](/assets/images/DC_Lab_12.5_16.png)
+  ![Team]({{site.baseurl}}/assets/images/DC_Lab_12.5_16.png)
 - Please follow the same steps as above to add an extra Team as Team2.
 
 4. User Configuration
@@ -557,7 +557,7 @@ The users have the following pre-configuration
 - Select Agent Profile in the Agent Profile drop-down list.
 - Select MMP in the Multimedia Profile drop-down and hit Save.
 - Make sure that the user are now shown with the Contact Center Enabled flag as Yes and Status as Active.
-  ![User](/assets/images/DC_Lab_12.5_17.png)
+  ![User]({{site.baseurl}}/assets/images/DC_Lab_12.5_17.png)
 - Please follow the same steps for Supervisor user.
 
 ## 3. Setup RONA timers
@@ -569,7 +569,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 
 - Log in to the Control Hub at https://admin.webex.com
 - Navigate to Services -> Contact Center -> Settings -> Desktop -> RONA Timeouts.  
-![User](/assets/images/DC_Lab_12.5_18.png)
+![User]({{site.baseurl}}/assets/images/DC_Lab_12.5_18.png)
 - Modify the existing timers by putting the values from the tables below:
 | Channel   | New Values | Limitations      |
 | --------- | ---------- | ---------------- |
@@ -587,7 +587,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 - In the Station Login pane, select “Extension” and put any number, for instance 1000.
 > Note: The Webex Calling service is not activated at this tenant we need to set a dummy extension only once during the login.
 - Select the Team1 and click Submit. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the Next Lab.
- ![User](/assets/images/DC_Lab_12.5_19.gif)
+ ![User]({{site.baseurl}}/assets/images/DC_Lab_12.5_19.gif)
 ---
 
 **Congratulations, you have completed this section!**
@@ -740,7 +740,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 ## Configuration Order
 
-![DC_Lab.12.7_Email_ConfigurationOrder](/assets/images/DC_Lab.12.7_Email_ConfigurationOrder.png)
+![DC_Lab.12.7_Email_ConfigurationOrder]({{site.baseurl}}/assets/images/DC_Lab.12.7_Email_ConfigurationOrder.png)
 
 ## 1. Gmail account configuration
 
@@ -760,11 +760,11 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 - Login to the Gmail account with the credentials above [https://mail.google.com](https://mail.google.com). The password is the same as for Webex admin account. During first login select **Turn off smart features**. 
 - Enable POP3/IMAP setting by clicking on settings icon on top right corner and selecting **See all settings**.
 
-![DC_Lab.12.7_Gmail_account_configuration_1](/assets/images/DC_Lab.12.7_Gmail_account_configuration_1.png)
+![DC_Lab.12.7_Gmail_account_configuration_1]({{site.baseurl}}/assets/images/DC_Lab.12.7_Gmail_account_configuration_1.png)
 
 - Now Click on **Forwarding and POP/IMAP**, enable the `POP Download` and `IMAP access` then click **Save Changes**.
 
-![DC_Lab.12.7_Gmail_account_configuration_2](/assets/images/DC_Lab.12.7_Gmail_account_configuration_2.png)
+![DC_Lab.12.7_Gmail_account_configuration_2]({{site.baseurl}}/assets/images/DC_Lab.12.7_Gmail_account_configuration_2.png)
 
 
 #### 2. Create a project at Google API Console 
@@ -773,43 +773,43 @@ We need to activate API if we want to use Gmail account for outbound emails.
 - Login to [Google Developers Console](https://console.developers.google.com/) with the credentials above. The password is the same as for Webex Contact Center admin account.
 - You will have to agree with the Terms of Service and pick their Country of residence. Then click **Select a project** and create a **NEW PROJECT**.
 
-![DC_Lab.12.7_Create_new_project_at_Google_API_Console_1](/assets/images/DC_Lab.12.7_Create_new_project_at_Google_API_Console_1.png)
+![DC_Lab.12.7_Create_new_project_at_Google_API_Console_1]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create_new_project_at_Google_API_Console_1.png)
 
 - Keep the default project's name and press **Create** at the bottom. Make sure that now you have selected this project. 
 
-![DC_Lab.12.7_Create_new_project_at_Google_API_Console_2](/assets/images/DC_Lab.12.7_Create_new_project_at_Google_API_Console_2.png)
+![DC_Lab.12.7_Create_new_project_at_Google_API_Console_2]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create_new_project_at_Google_API_Console_2.png)
 
 #### 3. Enable Gmail API (for outgoing emails)
 
 - Enter `Gmail API` in the search bar and click on it once found.
 
-![DC_Lab.12.7_Enable_Gmail_API_1](/assets/images/DC_Lab.12.7_Enable_Gmail_API_1.png)
+![DC_Lab.12.7_Enable_Gmail_API_1]({{site.baseurl}}/assets/images/DC_Lab.12.7_Enable_Gmail_API_1.png)
 
 - You need to enable the API for your project by clicking on **ENABLE** button.
 
-![DC_Lab.12.7_Enable_Gmail_API_2](/assets/images/DC_Lab.12.7_Enable_Gmail_API_2.png)
+![DC_Lab.12.7_Enable_Gmail_API_2]({{site.baseurl}}/assets/images/DC_Lab.12.7_Enable_Gmail_API_2.png)
 
 #### 4. Configure OAuth Consent Screen and Scopes
 
 - Once the API is enabled, you’ll be taken to a nice dashboard that says, `"To use this API, you may need credentials"`.
 
-![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_1](/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_1.png)
+![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_1]({{site.baseurl}}/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_1.png)
 
 - To create an OAuth client ID, you must first configure your consent screen. Under the APIs and Services section, click on **OAuth Consent Screen**, set the user type as `External` and click **CREATE** button.
 
-![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_2](/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_2.png)
+![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_2]({{site.baseurl}}/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_2.png)
 
 -  It will bring you to a page with many fields. Just enter the **App name** as `WebexCCEmails`, choose your **User support email** and enter the same email in the **Developer contact information**. In the end press **SAVE AND CONTINUE**.
 
-![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_3](/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_3.png)
+![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_3]({{site.baseurl}}/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_3.png)
 
 - On the next screen, you need to provide Auth 2.0 Scopes for Google APIs. Click the **Add Or Remove Scopes** button and add https://www.googleapis.com/auth/gmail.send to the list of scopes since we only want to send emails from Gmail and not read any user data. Click **SAVE AND CONTINUE**.
 
-![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_4](/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_4.png)
+![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_4]({{site.baseurl}}/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_4.png)
 
 - On the test user page, click **ADD USERS** and enter your Gmail address. Click **Save and Continue**.
 
-![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_5](/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_5.png)
+![DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_5]({{site.baseurl}}/assets/images/DC_Lab.12.7_Configure_OAuth_Consent_Screen_and_Scopes_5.png)
 
 
 #### 5. Credentials and authentication with OAuth 2.0
@@ -818,17 +818,17 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - In the APIs & Services section, click on **Credentials** and then pick **OAuth client ID** from the drop-down list of the **CREATE CREDENTIALS** button. 
 
-![DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_1](/assets/images/DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_1.png)
+![DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_1]({{site.baseurl}}/assets/images/DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_1.png)
 
 - Select `Web application` in the **Application type**
 - You can leave the default name. The name of your OAuth 2.0 client is only used to identify the client in the Google Cloud console and will not be shown to application users. 
 - In the **Authorized redirect URIs** section click **ADD URI** button and set `https://cl1pod\<ID\>.webexconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
 
-![DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_2](/assets/images/DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_2.png)
+![DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_2]({{site.baseurl}}/assets/images/DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_2.png)
 
 - Download a JSON file with your credentials – you’ll need it later.
 
-![DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_3](/assets/images/DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_3.png)
+![DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_3]({{site.baseurl}}/assets/images/DC_Lab.12.7_Credentials_and_authentication_with_OAuth_2.0_3.png)
 
 
 ## 2. Create Email Asset and Register to WebexCC
@@ -838,7 +838,7 @@ Now create a new client ID that will be used to identify your application to Goo
 - As an admin, login to Webex Connect UI using the provided URL https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number).
 - Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
 
-![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC](/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC_1.gif)
+![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC_1.gif)
 
 - Set the settings according to the table below:
 
@@ -862,41 +862,41 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Click **GENERATE TOKEN** and follow the step on the screenshot:
 
-![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC](/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC_2.gif)
+![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC_2.gif)
 
 - Verify that the **ACCESS TOKEN** and **REFRESH TOKEN** are generated and click **SAVE**.
 
-![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC](/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC.png)
+![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC.png)
 
 - Click on **REGISTER TO WEBEX CC** and Select the service **My First Service**. In the end click **REGISTER**.
 
-![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC](/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC_3.gif)
+![DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create_Email_Asset_and_Register_to_WebexCC_3.gif)
 
 #### 2. Add forwarding Address
 
 - Copy the forwarding address from the created asset in previous step and in Gmail account. 
  
-![DC_Lab.12.7_Add_forwarding_Address_1](/assets/images/DC_Lab.12.7_Add_forwarding_Address_1.png)
+![DC_Lab.12.7_Add_forwarding_Address_1]({{site.baseurl}}/assets/images/DC_Lab.12.7_Add_forwarding_Address_1.png)
 
 - Go back to the Gmail account and click on settings icon on top right corner -> Select **See all settings**.
 
-![DC_Lab.12.7_Add_forwarding_Address_2](/assets/images/DC_Lab.12.7_Add_forwarding_Address_2.png)
+![DC_Lab.12.7_Add_forwarding_Address_2]({{site.baseurl}}/assets/images/DC_Lab.12.7_Add_forwarding_Address_2.png)
 
 - Click on **Forwarding and POP/IMAP** -> click on **Add a forwarding address** -> Paste the copied forwarding address from the created asset. Then click on **Next**. In a new pop up tab click **Proceed** and then click **OK** when it prompts.
 
-![DC_Lab.12.7_Add_forwarding_Address_3](/assets/images/DC_Lab.12.7_Add_forwarding_Address_3.gif)
+![DC_Lab.12.7_Add_forwarding_Address_3]({{site.baseurl}}/assets/images/DC_Lab.12.7_Add_forwarding_Address_3.gif)
 
 - In order to fetch the confirmation email, go back to Webex Connect and click on the **Debug Console** Menu on the left pane, select `Query Historical Logs` – `Channel = Email` – `Date Range = Today/Last Hour`.  Click the **Search** button.  
 
-![DebugConsole3](/assets/images/DebugConsole3.png)
+![DebugConsole3]({{site.baseurl}}/assets/images/DebugConsole3.png)
 
 - You should only have 1 transaction in your logs at this point.  Click the **Message ID** Link for `Event Handled`
 
-![OneTransaction](/assets/images/OneTransaction.png)
+![OneTransaction]({{site.baseurl}}/assets/images/OneTransaction.png)
 
 - Click the **decrypt logs** button, then click the **Trace Details** link for that transaction. Click the **copy** button next to the Data entry in the lower right pane.  
 
-![email_copy debug](/assets/images/email_copy_debug.gif)
+![email_copy debug]({{site.baseurl}}/assets/images/email_copy_debug.gif)
 
 - Paste the copied data from the debug logs into the empty field below and press the Get URL button.  This will pull out the forwarding verification URL that google sent you.  
 
@@ -911,15 +911,15 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Paste the URL into a new browser tab and hit **Enter**.  Click the **Confirm** button to OK the forwarding.
 
-![email_paste_debug](/assets/images/email_copy_debug.gif)
+![email_paste_debug]({{site.baseurl}}/assets/images/email_copy_debug.gif)
 
 - You will get a confirmation message
 
-![emailConfirmation](/assets/images/emailConfirmation.png)
+![emailConfirmation]({{site.baseurl}}/assets/images/emailConfirmation.png)
 
 - Back in the settings of your Gmail account, forwarding should be reflected in the Forwarding and POP/IMAP tab.
 
-![CheckPopSetting](/assets/images/CheckPopSetting.png)
+![CheckPopSetting]({{site.baseurl}}/assets/images/CheckPopSetting.png)
 
 ## 3. Email Entry Point and Queue creation
 
@@ -934,7 +934,7 @@ Now create a new client ID that will be used to identify your application to Goo
 - The **_Time Zone_** can stay as default value.
 - Click on **Save** after comparing your values with the screenshot below.
 
-![DC_Lab.12.7_Email_Entry_Point_and_Queue_creation](/assets/images/DC_Lab.12.7_Email_Entry_Point_and_Queue_creation_1.png)
+![DC_Lab.12.7_Email_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab.12.7_Email_Entry_Point_and_Queue_creation_1.png)
 
 #### 2. Create Two Queues in Management Portal 
 
@@ -949,14 +949,14 @@ Now create a new client ID that will be used to identify your application to Goo
 - The **_Time Zone_** can stay as default value.
 - Click on **Save** after comparing your values with the screenshot below.
 
-![DC_Lab.12.7_Email_Entry_Point_and_Queue_creation](/assets/images/DC_Lab.12.7_Email_Entry_Point_and_Queue_creation_2.png)
+![DC_Lab.12.7_Email_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab.12.7_Email_Entry_Point_and_Queue_creation_2.png)
 
 - Create a second queue by repeating the same steps as above.
 - Input **_Name_** as `Email_Q2`.
 - Select `Email` in the **_Channel Type_** section.
 - In the the **_Email Distribution_** click on **Add Group** and select `Team2`.
 
-![DC_Lab.12.7_Email_Entry_Point_and_Queue_creation](/assets/images/DC_Lab.12.7_Email_Entry_Point_and_Queue_creation_3.png)
+![DC_Lab.12.7_Email_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab.12.7_Email_Entry_Point_and_Queue_creation_3.png)
 
 ## 4. Create/Upload Email flow
 
@@ -968,34 +968,34 @@ Now create a new client ID that will be used to identify your application to Goo
 - Enter the **FLOW NAME** as **Email Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
-![DC_Lab.12.7_Create-Upload_Email_flow](/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_1.png)
+![DC_Lab.12.7_Create-Upload_Email_flow]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_1.png)
 
 - Click **Save** and in the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
 
-![DC_Lab.12.7_Create-Upload_Email_flow](/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_2.png)
+![DC_Lab.12.7_Create-Upload_Email_flow]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_2.png)
 
 - Click **Settings** on top right corner and switch to **Custom variables** tab. Here in the **bizemailid** row, update the default value with your email address of the Gmail account. Click **SAVE**.
 
-![DC_Lab.12.7_Create-Upload_Email_flow](/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_3.png)
+![DC_Lab.12.7_Create-Upload_Email_flow]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_3.png)
 
 - Go to ***Resolve Conversation*** node and fill in ***Flow Id*** field with ***flowId*** value copied from the address bar of web browser. Then save changes.
 
-![DC_Lab.12.7_Create-Upload_Email_flow](/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_flowid.png)
+![DC_Lab.12.7_Create-Upload_Email_flow]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_flowid.png)
  
 - Finally click on Make Live on top right corner -> Select the Application/Asset that we have created and click Make Live.
 
-![DC_Lab.12.7_Create-Upload_Email_flow](/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_4.png)
+![DC_Lab.12.7_Create-Upload_Email_flow]({{site.baseurl}}/assets/images/DC_Lab.12.7_Create-Upload_Email_flow_4.png)
 
 ## 5. Verification: Send an Email and accept the task
 
 - Go to personal email account and send an email to the support email address that was initially configured in the Email Asset.
 - Go to the Agent Desktop and make the agent Available.
 
-![EmailVerification](/assets/images/DC_Lab.12.7_Verification_-_Send_an_Email_and_accept_the_task_1.png)
+![EmailVerification]({{site.baseurl}}/assets/images/DC_Lab.12.7_Verification_-_Send_an_Email_and_accept_the_task_1.png)
 
 - The Email will be offered to the agent. Click **Accept** to handle the email. Click "Reply" or Reply All" to the email and hit send button.
 
-![EmailVerification](/assets/images/DC_Lab.12.7_Verification_-_Send_an_Email_and_accept_the_task_2.png)
+![EmailVerification]({{site.baseurl}}/assets/images/DC_Lab.12.7_Verification_-_Send_an_Email_and_accept_the_task_2.png)
 
 - Add wrap up and close the task.
 
@@ -1063,7 +1063,7 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Go to ***Services*** and press ***Create New Service*** button ar the right top corner.
 -  Input the name **`My First Service`** and press ***Create*** button.
 
-![DC_Lab.12.8_Create_Service](/assets/images/DC_Lab_12.8._Create_Service.png)
+![DC_Lab.12.8_Create_Service]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Service.png)
 
 
 ## 2. Configure and Register Chat Asset
@@ -1071,26 +1071,26 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Login to Connect Portal.
 -  Go to ***Assets*** -> ***Apps***, press ***Configure New App*** and select ***Mobile / Web*** option.
 
-![DC_Lab.12.8_Create_Asset_1](/assets/images/DC_Lab_12.8._Create_Asset_1.png)
+![DC_Lab.12.8_Create_Asset_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Asset_1.png)
 
 -  Input ***Name*** as **`Chat_Asset`**.
 -  Toggle/enable ***Live Chat / In-AppMessaging*** to ***ON*** and choose ***Primary Transport Protocol*** as **`MQTT`** & ***Secondary Transport Protocol*** as **`Web Socket`** then tick ***Use Secured Port*** checkbox and press ***Save*** button.
 
 >**Note**: If there is an error that your request cannot be processed, please press ***Save*** button one more time.
 
-![DC_Lab.12.8_Create_Asset_2](/assets/images/DC_Lab_12.8._Create_Asset_2.png)
+![DC_Lab.12.8_Create_Asset_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Asset_2.png)
 
 -  Once asset is saved, press ***Register To Webex Engage*** at the top, choose ***My First Service*** from the drop-down list and press ***Register*** button.
 
-![DC_Lab.12.8_Create_Asset_3](/assets/images/DC_Lab_12.8._Create_Asset_3.png)
+![DC_Lab.12.8_Create_Asset_3]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Asset_3.png)
 
 -  Check and make sure the asset has been succesfully registered to the service and  ***Register To Webex Engage*** button has been greyed out.
 
-![DC_Lab.12.8_Create_Asset_4](/assets/images/DC_Lab_12.8._Create_Asset_4.png)
+![DC_Lab.12.8_Create_Asset_4]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Asset_4.png)
 
 *  Return to ***Assets*** -> ***Apps***, find ***ChatAsset***, copy ***App ID***, paste it into the text file and save. We will use it when configuring chat flow later.
 
-![DC_Lab.12.8_Create_Asset_5](/assets/images/DC_Lab_12.8._Create_Asset_5.png)
+![DC_Lab.12.8_Create_Asset_5]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Asset_5.png)
 
 
 ## 3. Create Entry Point for Chat
@@ -1098,7 +1098,7 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Login to Webex CC Management Portal URL with the credentials and access the menu ***Provisioning*** -> ***Entry Point/Queues*** -> ***Entry Point***.
 -  Press ***New Entry Point*** button.
 
-![DC_Lab.12.8_Create_Entry_Point_1](/assets/images/DC_Lab_12.8._Create_Entry_Point_1.png)
+![DC_Lab.12.8_Create_Entry_Point_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Entry_Point_1.png)
 
 -  Input ***Name*** as **`Chat_EP`**.
 -  Select **`Chat`** from the ***Channel Type*** drop-down list.
@@ -1107,7 +1107,7 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  The ***Time Zone*** can stay as default value.
 -  Click on ***Save*** after comparing your values with the screenshot below.
 
-![DC_Lab.12.8_Create_Entry_Point_2](/assets/images/DC_Lab_12.8._Create_Entry_Point_2.png)
+![DC_Lab.12.8_Create_Entry_Point_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Entry_Point_2.png)
 
 
 ## 4. Create Queue for Chat
@@ -1115,21 +1115,21 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  On Webex CC Management Portal access the menu ***Provisioning*** -> ***Entry Point/Queues*** -> ***Queue***.
 -  Click on ***New Queue***.
 
-![DC_Lab.12.8_Create_Queue_1](/assets/images/DC_Lab_12.8._Create_Queue_1.png)
+![DC_Lab.12.8_Create_Queue_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Queue_1.png)
 
 -  Input ***Name*** as **`Chat_Q`**.
 -  Select **`Chat`** in the ***Channel Type*** section.
 -  Leave the ***Queue Routing Type*** as default value **`Longest Available Agent`**.
 -  In the ***Chat Distribution*** click on ***Add Group*** and select `Team1`.
 
-![DC_Lab.12.8_Create_Queue_2](/assets/images/DC_Lab_12.8._Create_Queue_2.png)
+![DC_Lab.12.8_Create_Queue_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Queue_2.png)
 
 -  Set ***Service Level Threshold*** as **`7200`** seconds (2 hours).
 -  Set ***Maximum Time in Queue*** as **`10800`** seconds (3 hours).
 -  The ***Time Zone*** can stay as default value.
 -  Click on ***Save*** after comparing your values with the screenshot below.
 
-![DC_Lab.12.8_Create_Queue_3](/assets/images/DC_Lab_12.8._Create_Queue_3.png)
+![DC_Lab.12.8_Create_Queue_3]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Queue_3.png)
 
 
 ## 5. Create Chat Template
@@ -1137,14 +1137,14 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Login to Webex Connect UI.
 -  Go to ***Tools*** -> ***Templates*** and press ***Add new Template*** button.
 
-![DC_Lab.12.8_Create_Template_1](/assets/images/DC_Lab_12.8._Create_Template_1.png)
+![DC_Lab.12.8_Create_Template_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Template_1.png)
 
 -  Provide **_Name_** as **`Chat_Template`** and choose **_Channel_** as **_Live Chat / In-App Messaging_**
 -  Select ***Message Type*** as ***Form****.
 -  Provide the ***Title*** as **`Welcome to Webex CC Chat`** and this will be the welcome message.
 -  Click on ***Add Field***  to start adding the fields into the template.
 
-![DC_Lab.12.8_Create_Template_2](/assets/images/DC_Lab_12.8._Create_Template_2.png)
+![DC_Lab.12.8_Create_Template_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Template_2.png)
 
 -  Add ***Name*** field with the following parameters into the form:
 
@@ -1155,7 +1155,7 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 | Label           | Name            |
 | Mandatory Field | On              |
 
-![DC_Lab.12.8_Create_Template_3](/assets/images/DC_Lab_12.8._Create_Template_3.png)
+![DC_Lab.12.8_Create_Template_3]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Template_3.png)
 
 -  Click on ***Add Field*** button and add ***Email*** field with the following parameters into the form:
 
@@ -1166,27 +1166,27 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 | Label           | Email           |
 | Mandatory Field | On              |
 
-![DC_Lab.12.8_Create_Template_4](/assets/images/DC_Lab_12.8._Create_Template_4.png)
+![DC_Lab.12.8_Create_Template_4]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Template_4.png)
 
 -   Click on ***Save*** after comparing your values with the screenshot below.
 
-![DC_Lab.12.8_Create_Template_5](/assets/images/DC_Lab_12.8._Create_Template_5.png)
+![DC_Lab.12.8_Create_Template_5]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Template_5.png)
 
 ## 6. Website Widget Configuration
 
 -  Login to WxCC Management Portal access the menu and cross launch Engage Portal by choosing ***New Digital Channels***.
 
-![DC_Lab.12.8_Create_Website_1](/assets/images/DC_Lab_12.8._Create_Website_1.png)
+![DC_Lab.12.8_Create_Website_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_1.png)
 
 -  Go to ***Assets*** -> search and edit ***Chat_Asset*** which you have created in Connect Portal.
 
-![DC_Lab.12.8_Create_Website_2](/assets/images/DC_Lab_12.8._Create_Website_2.png)
+![DC_Lab.12.8_Create_Website_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_2.png)
 
 -  Scroll down and click on ***Save Changes*** button.
 -  Scroll to top of the page and choose ***Websites*** tab.
 -  Click on ***ADD Website***.
 
-![DC_Lab.12.8_Create_Website_3](/assets/images/DC_Lab_12.8._Create_Website_3.png)
+![DC_Lab.12.8_Create_Website_3]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_3.png)
 
 -  Fill in the respective fields as per the table below:
 
@@ -1204,11 +1204,11 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 
 -  Scroll down and click on ***Save changes*** button after comparing your values with the screenshot below.
 
-![DC_Lab.12.8_Create_Website_4](/assets/images/DC_Lab_12.8._Create_Website_4.png)
+![DC_Lab.12.8_Create_Website_4]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_4.png)
 
-![DC_Lab.12.8_Create_Website_5](/assets/images/DC_Lab_12.8._Create_Website_5.png)
+![DC_Lab.12.8_Create_Website_5]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_5.png)
 
-![DC_Lab.12.8_Create_Website_6](/assets/images/DC_Lab_12.8._Create_Website_6.png)
+![DC_Lab.12.8_Create_Website_6]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_6.png)
 
 -  Scroll up, select ***Appearance*** and change the settings:
 	- \[Optional\] Widget Color
@@ -1218,21 +1218,21 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 	- Enable Attachments
 -  Press ***Save changes*** button at the bottom of the page.
 
-![DC_Lab.12.8_Create_Website_7](/assets/images/DC_Lab_12.8._Create_Website_7.png)
+![DC_Lab.12.8_Create_Website_7]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_7.png)
  
 -  Scroll up, select ***Widget Visibility*** tab and make sure that ***Force Turn Off Widget*** switch is disabled.  Then select ***Widget Visibility*** as ***Show without any restrictions*** and save changes.
 
-![DC_Lab.12.8_Create_Website_8](/assets/images/DC_Lab_12.8._Create_Website_8.png)
+![DC_Lab.12.8_Create_Website_8]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_8.png)
 
 -  Now click on ***<*** arrow near ***Website Settings*** and go-back to edit your chat asset.
 
-![DC_Lab.12.8_Create_Website_9](/assets/images/DC_Lab_12.8._Create_Website_9.png)
+![DC_Lab.12.8_Create_Website_9]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_9.png)
 
 - Select ***Installation*** then click on ***Copy*** to copy the chat script to clipboard.
 
-![DC_Lab.12.8_Create_Website_10](/assets/images/DC_Lab_12.8._Create_Website_10.png)
+![DC_Lab.12.8_Create_Website_10]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_10.png)
 
-![DC_Lab.12.8_Create_Website_10](/assets/images/DC_Lab_12.8._Create_Website_11.png)
+![DC_Lab.12.8_Create_Website_10]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_11.png)
  
 -  Paste copied script into a text editor and save it. We will paste it on web site later.
 
@@ -1246,53 +1246,53 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Go to Connect Portal, click on **Services** and select the service in which the Asset is created in step 2 above. It should be ***My First Service***.
 -  In the service click on **Flows** -> **Create Flow** .
 
-![DC_Lab.12.8_Create_Flow_1](/assets/images/DC_Lab_12.8._Create_Flow_1.png)
+![DC_Lab.12.8_Create_Flow_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_1.png)
 
 -  Enter the ***Flow Name*** as **`Chat Inbound Flow`**, select the ***Type*** as ***Work Flow*** and under ***Method*** select ***Upload a flow***.
 -  Drag and drop unzipped ***Live Chat Inbound Flow.workflow*** flow, click ***Create***.
 
-![DC_Lab.12.8_Create_Flow_2](/assets/images/DC_Lab_12.8._Create_Flow_2.png)
+![DC_Lab.12.8_Create_Flow_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_2.png)
 
 -  You will be redirected to the new flow opened in the flow builder. Click ***Save*** to save the changes.
 
-![DC_Lab.12.8_Create_Flow_3_1](/assets/images/DC_Lab_12.8._Create_Flow_3_1.png)
+![DC_Lab.12.8_Create_Flow_3_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_3_1.png)
 
 -  In the ***Pre-chat form*** node the ***Form Template*** needs to be selected as ***Chat_Template*** created in step 5 above. Press ***Save*** button to save changes in node configuration.
 
-![DC_Lab.12.8_Create_Flow_4_1](/assets/images/DC_Lab_12.8._Create_Flow_4_1.png)
+![DC_Lab.12.8_Create_Flow_4_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_4_1.png)
 
 -  In the ***Receive*** node also, select the same ***Chat_Template*** in ***Form Template*** drop-down list.
 
-![DC_Lab.12.8_Create_Flow_5_1](/assets/images/DC_Lab_12.8._Create_Flow_5_1.png)
+![DC_Lab.12.8_Create_Flow_5_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_5_1.png)
 
 - Go to ***Transition Actions (Optional)*** tab of ***Receive*** node, check and make sure the values of ***customerName*** and ***customerEmail***  variables corresponds to the names of web chat template fields in ***Output Variables*** -> ***Receive*** -> ***InApp - Form Response*** section on the right pane. Correct the values if needed and save the node.
 
 >***Note***: The value of each variable has the following format: ***$(NodeID.OutputVariableName)***. In our case NodeID is 2438 (you can find it in the left bottom corner of ***Receive*** window), ***OutputVariableName*** is just exact name from ***Output Variables*** -> ***Receive*** -> ***InApp - Form Response*** section on the right pane.
 
-![DC_Lab.12.8_Create_Flow_6_1](/assets/images/DC_Lab_12.8._Create_Flow_6_1.png)
+![DC_Lab.12.8_Create_Flow_6_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_6_1.png)
 
 -  Go to ***Resolve Conversation*** node and fill in ***Flow Id*** field with ***flowId*** value copied from the address bar of web browser tab. In this example, Flow Id is 4464. Then save changes.
 
-![DC_Lab.12.8_Create_Flow_6_2](/assets/images/DC_Lab_12.8._Create_Flow_6_2.png)
+![DC_Lab.12.8_Create_Flow_6_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_6_2.png)
 
 -  In ***Queue Task*** node select ***Queue Name*** as ***Chat_Q*** created in Webex CC Management Portal in step 4 above and save changes.
 
-![DC_Lab.12.8_Create_Flow_7_1](/assets/images/DC_Lab_12.8._Create_Flow_7_1.png)
+![DC_Lab.12.8_Create_Flow_7_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_7_1.png)
 
 -  Click on ***Settings*** (gear icon) on top right corner of flow builder window and disable ***Descriptive logs*** on ***General*** tab.
  
-![DC_Lab.12.8_Create_Flow_8_1](/assets/images/DC_Lab_12.8._Create_Flow_8_1.png)
+![DC_Lab.12.8_Create_Flow_8_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_8_1.png)
 
 - Then go to ***Custom variables*** tab. Here enter ***appId*** as the ***App ID*** of the asset created in step 2 above. In addition. enter ***liveChatDomain*** as **`www.w3schools.com`** and save changes.
 
-![DC_Lab.12.8_Create_Flow_8_2](/assets/images/DC_Lab_12.8._Create_Flow_8_2.png)
+![DC_Lab.12.8_Create_Flow_8_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_8_2.png)
 
 -  Click on ***Save*** button on top right corner to save the entire flow.
 -  Click on ***Make Live*** on top right corner (near ***Save*** button) then select the ***Application*** as ***Chat_Asset*** in pop-up window and click ***Make Live***. Wait around 2-3 minutes until flow goes live.
 
 >***Note***: If there is ***Forbidden*** message after you pressed ***Make Live*** button, please close Make Live window, open it one more time, select the asset again and press ***Make Live*** button one more time.
 
-![DC_Lab.12.8_Create_Flow_9_1](/assets/images/DC_Lab_12.8._Create_Flow_9_1.png)
+![DC_Lab.12.8_Create_Flow_9_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Flow_9_1.png)
 
 
 ## 8. Create Chat Close Flow
@@ -1307,18 +1307,18 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Enter the ***Flow Name*** as **`Chat Close Flow`**, select the ***Type*** as ***Work Flow*** and under ***Method*** select ***Upload a flow***.
 -  Drag and drop unzipped ***Live Chat Close Flow.workflow*** flow, click ***Create***.
 
-![DC_Lab.12.8_Create_Closed_Flow_1](/assets/images/DC_Lab_12.8._Create_Closed_Flow_1.png)
+![DC_Lab.12.8_Create_Closed_Flow_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Closed_Flow_1.png)
 
 -  You will be redirected to the new flow opened in the flow builder. Click ***Save*** to save the changes.
 
-![DC_Lab.12.8_Create_Closed_Flow_2](/assets/images/DC_Lab_12.8._Create_Closed_Flow_2.png)
+![DC_Lab.12.8_Create_Closed_Flow_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Closed_Flow_2.png)
 
 -  Click on ***Save*** button on top right corner to save the entire flow.
 -  Click on ***Make Live*** on top right corner (near ***Save*** button) then select the ***Application*** as ***Chat_Asset*** in pop-up window and click on ***Make Live***. Wait around 2-3 minutes until flow goes live.
 
 >***Note***: If there is ***Forbidden*** message after you pressed ***Make Live*** button, please close Make Live window, open it one more time, select the asset again and press ***Make Live*** button one more time.
 
-![DC_Lab.12.8_Create_Closed_Flow_3](/assets/images/DC_Lab_12.8._Create_Closed_Flow_3.png)
+![DC_Lab.12.8_Create_Closed_Flow_3]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Closed_Flow_3.png)
 
 
 ## 9. Publish Chat Widget
@@ -1326,7 +1326,7 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Go to [HTML w3school Editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro)
 -  Paste the script which you copied in step 6 just above the ```</body>``` tag in the left window and click on ***Run***. You should see chat widget icon in the right bottom corner of the window.
 
-![DC_Lab.12.8_Publish_Widget_1](/assets/images/DC_Lab_12.8._Publish_Widget_1.png)
+![DC_Lab.12.8_Publish_Widget_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Publish_Widget_1.png)
 
 
 ## 10. Verification: Initiate and Accept the Chat
@@ -1334,21 +1334,21 @@ We will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, 
 -  Login to the Agent Desktop and make the agent ***Not Ready***. 
 -  Click on chat widget icon in the right bottom corner of [HTML TryIt Editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro) window and press ***Start Chat*** button.
 
-![DC_Lab.12.8_Verify_1](/assets/images/DC_Lab_12.8._Verify_1.png)
+![DC_Lab.12.8_Verify_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Verify_1.png)
 
 -  Provide Name and Email to start chat.
 
-![DC_Lab.12.8_Verify_2](/assets/images/DC_Lab_12.8._Verify_2.png)
+![DC_Lab.12.8_Verify_2]({{site.baseurl}}/assets/images/DC_Lab_12.8._Verify_2.png)
 
 -  Go to the Agent Desktop and make the agent Available. Then accept incoming chat conversation by pressing ***Accept*** button on the chat card on the left pane.
 
-![DC_Lab.12.8_Verify_3](/assets/images/DC_Lab_12.8._Verify_3.png)
+![DC_Lab.12.8_Verify_3]({{site.baseurl}}/assets/images/DC_Lab_12.8._Verify_3.png)
 
 -  Make sure end user and agent are able to exchange messages with each other. Then you can close the chat.
 
-![DC_Lab.12.8_Verify_4](/assets/images/DC_Lab_12.8._Verify_4.png)
+![DC_Lab.12.8_Verify_4]({{site.baseurl}}/assets/images/DC_Lab_12.8._Verify_4.png)
 
-![DC_Lab.12.8_Verify_5](/assets/images/DC_Lab_12.8._Verify_5.png)
+![DC_Lab.12.8_Verify_5]({{site.baseurl}}/assets/images/DC_Lab_12.8._Verify_5.png)
 
 ---
 
@@ -1409,11 +1409,11 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Click on `Create a Page` button
 
-![DC_Lab_12.9_Facebook_Page_configuration](/assets/images/DC_Lab_12.9_Facebook_Page_configuration1.jpg)
+![DC_Lab_12.9_Facebook_Page_configuration]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Page_configuration1.jpg)
 
 - If you are logged in already to Facebook, you will be presented with the Business Page creation tool. Simply give the page a Name and a Category then Click `Create Page` button
 
-![DC_Lab_12.9_Facebook_Page_configuration](/assets/images/DC_Lab_12.9_Facebook_Page_configuration2.jpg)
+![DC_Lab_12.9_Facebook_Page_configuration]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Page_configuration2.jpg)
 
 [Back to top](#table-of-contents)
 
@@ -1423,43 +1423,43 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Navigate to `Assets` > `Apps` > `Configure New App` > `Messenger` and Click on `Add Messenger Page` button
 
-![FM1](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC1.gif)
+![FM1]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC1.gif)
 
 - If you haven't done already, authenticate with your FB account where you have a page already created. Then select the respective page that you want to integrate
 
-![FM2](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC2.jpg)
+![FM2]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC2.jpg)
 
 - Accept all default permissions
 
-![FM3](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC3.jpg)
+![FM3]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC3.jpg)
 
 - That completes the linking of the Facebook connect with Webex Connect
 
-![FM4](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC4.jpg)
+![FM4]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC4.jpg)
 
 - Finally select the Business Page you want to link to the Asset
 
-![FM5](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC5.jpg)
+![FM5]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC5.jpg)
 
 -  Provide the name and click `Save`
 
-![FM6](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC6.jpg)
+![FM6]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC6.jpg)
 
 -  Click `Register to Webex Engage`  in the ‘Configure New App-Messenger’ window ->  In the resulting window select the service and click `Register`.
 
-![FM7](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC7.jpg)
+![FM7]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC7.jpg)
 
 - Confirm that registration with Webex CC completed successfully
 
-![FM8](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC8.jpg)
+![FM8]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC8.jpg)
 
 - Scroll down and take note of the M.Me link in the `Page Discovery Addons` section. We will use that link to trigger the Facebook Messenger interaction from the Customer end. Also take note of the numeric string parameter in the M.Me link. That's the `Facebook Page ID` which we will also need later when configuring the flow.
 
-![FM9](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC9.jpg)
+![FM9]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC9.jpg)
 
 - Click on the back arrow to go back to the list of Assets Apps. Then take note of the application ID (app id) we just created. We will also need that app ID in the flow
 
-![FM10](/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC10.jpg)
+![FM10]({{site.baseurl}}/assets/images/DC_Lab_12.9_Facebook_Messenger_Asset_creation_&_register_to_Webex_CC10.jpg)
 
 [Back to top](#table-of-contents)
 
@@ -1483,7 +1483,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Click on **Save** after comparing your values with the screenshot below.
 
-![DC_Lab_12.9_Create_Entry_Point_and_Queue](/assets/images/DC_Lab_12.9_Create_Entry_Point_and_Queue1.jpg)
+![DC_Lab_12.9_Create_Entry_Point_and_Queue]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create_Entry_Point_and_Queue1.jpg)
 
 #### 2. Create Queue in Management Portal 
 
@@ -1507,7 +1507,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Click on **Save** after comparing your values with the screenshot below.
 
-![DC_Lab_12.9_Create_Entry_Point_and_Queue](/assets/images/DC_Lab_12.9_Create_Entry_Point_and_Queue2.jpg)
+![DC_Lab_12.9_Create_Entry_Point_and_Queue]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create_Entry_Point_and_Queue2.jpg)
 
 [Back to top](#table-of-contents)
 
@@ -1525,13 +1525,13 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - In the service click on **FLOWS** -> **CREATE FLOW** .
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow1.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow1.jpg)
 
 - Enter the **FLOW NAME** as **FBM Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
 - Drag and drop the **Facebook Inbound Flow.workflow** flow file that you unzipped, click **CREATE** and then click **SAVE**.
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow2.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow2.jpg)
 
 #### 2. Start node and Custom Variables
 
@@ -1539,18 +1539,18 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
   
 - First Click `Save` in the `Configure APP Event` page that loaded, this defines what will trigger the flow and the default settings are already good.
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow3.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow3.jpg)
 
 - Click on the gear button on the top right to load the flow settings dialog
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow4.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow4.jpg)
 
 - Select the Custom Variables tab and set the following Default Values:
 
 *FBPageID*: to the numeric string in the M.Me link we saved earlier in Step 2.
 *appid*: Application ID (appID) from the FBM Asset from Step 2
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow5.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow5.jpg)
 
 - Click `Save`
 
@@ -1558,18 +1558,18 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **FBM_Q** and click on **SAVE**.
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow6.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow6.jpg)
 
 - Go to ***Resolve Conversation*** node and fill in ***Flow Id*** field with ***flowId*** value copied from the address bar of web browser tab. Then save changes.
- ![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flowID.png)
+ ![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flowID.png)
  
 - Finally click on Make Live on top right corner
   
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow7.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow7.jpg)
 
 - Select the Application/Asset that we have created and click `Make Live`.
 
-![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow](/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow8.jpg)
+![DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow]({{site.baseurl}}/assets/images/DC_Lab_12.9_Create-Upload_Facebook_Messenger_flow8.jpg)
 
 - Wait for 2 minutes and verify that the flow is published successfully.
 
@@ -1579,33 +1579,33 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Open a new tab and login to the Agent Desktop if you haven't done already and make the agent Available (if you haven't done already in Lab2). 
 
-![FC1](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request1.png)
+![FC1]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request1.png)
 
 - Open a new tab on the same browser session to make sure you are still authenticated to Facebook. Go to the M.Me URL you copied in Step 2 and the following FBM page should load with the Facebook Business page chat you created earlier
 
-![FC2](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request2.jpg)
+![FC2]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request2.jpg)
 
 - Start chatting and that should trigger a contact into Webex Contact Center that will get routed according to the flow we configured in Step 4. A notification should appear that should help you switch to the agent desktop tab to accept the contact
 
-![FC3](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request3.jpg)
+![FC3]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request3.jpg)
 
-![FC4](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request4.jpg)
+![FC4]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request4.jpg)
 
 - Type a response and hit send button.
 
-![FC5](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request5.jpg)
+![FC5]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request5.jpg)
 
 - Response will be received in the other tab where the FBM page is:
 
-![FC6](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request6.jpg)
+![FC6]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request6.jpg)
 
 - End the contact
 
-![FC7](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request7.jpg)
+![FC7]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request7.jpg)
 
 - Add wrap up and close the task. 
 
-![FC8](/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request8.jpg)
+![FC8]({{site.baseurl}}/assets/images/DC_Lab_12.9_Verification_-_start_Facebook_Chat_and_accept_the_request8.jpg)
 
 
 ---
@@ -1669,30 +1669,30 @@ This lab is designed to complete required SMS configurations in Webex Connect. Y
 
 From the left side pane, click on Assets ---> Numbers
 
-![12.10.1](/assets/images/12.10.1.png)
+![12.10.1]({{site.baseurl}}/assets/images/12.10.1.png)
 
 - Select the number from the list. Click on Manage and Register to Webex Engage.In the subsequent window select the service and click register.
 
-![12.10.2](/assets/images/12.10.2.png)
+![12.10.2]({{site.baseurl}}/assets/images/12.10.2.png)
 
 - Login to the Contact Centre Management Portal . Click on Provisioning ---> Entry Points. Click on New entry Point.
 
-![12.10.3](/assets/images/12.10.3.png)
+![12.10.3]({{site.baseurl}}/assets/images/12.10.3.png)
 
 - Enter a unique name, select the channel type as social, Social Channel Type as SMS and select the Asset that was created in Webex Connect as the Asset name. Click Save.
 
-![12.10.4](/assets/images/12.10.4.png)
+![12.10.4]({{site.baseurl}}/assets/images/12.10.4.png)
 
 - Click on Provisioning---->Queue’s from the Left pane and click New Queue.Enter a unique name and select the Channel Type as Social Channel. Add the other required details and click Save.
 
-![12.10.5](/assets/images/12.10.5.png)
+![12.10.5]({{site.baseurl}}/assets/images/12.10.5.png)
 
 ## 3. Workflow Association
 
 - Download the SMS flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels)
 - Navigate to webexcc-digital-channels/Webex Connect Flows/v3.0/Template/Media Specific Workflows/SMS Inbound Flow.workflow.zip select the zip file and click download
 
-![12.10.6](/assets/images/12.10.6.png)
+![12.10.6]({{site.baseurl}}/assets/images/12.10.6.png)
 
 - Unzip the downloaded file.
 - Go to Webex Connect, click on Services and select the service in which the Asset is created in.
@@ -1700,34 +1700,34 @@ From the left side pane, click on Assets ---> Numbers
 - Enter the FLOW NAME as SMS Inbound Flow, select the TYPE as Work Flow and under METHOD select Upload a flow.
 - Drag and drop the SMS Inbound Flow.workflow flow that is downloaded in zip file, click CREATE
 
-![12.10.7](/assets/images/12.10.7.png)
+![12.10.7]({{site.baseurl}}/assets/images/12.10.7.png)
 
 - In the resulting window select the Incoming number from the dropdown list and click Save
 
-![12.10.12](/assets/images/12.10.12.png)
+![12.10.12]({{site.baseurl}}/assets/images/12.10.12.png)
 
 ## 4. Modifying the Flow
 
 - Open the Resolve Conversation Node in the flow. Select the flow id from the URL and enter it in the Flow ID box and click Save.
   
-  ![12.10.8.1](/assets/images/12.10.8.1.png)
+  ![12.10.8.1]({{site.baseurl}}/assets/images/12.10.8.1.png)
 
 - Open the Queue Task Node in the flow. Select the Queue that you created in an earlier step and click Save.
 
-![12.10.8](/assets/images/12.10.8.png)
+![12.10.8]({{site.baseurl}}/assets/images/12.10.8.png)
 
 - Open up an SMS node in the flow and enter the from Number variable selected from the right side pane as shown below.Click Save
 - Repeat the above step for all the SMS nodes in the flow.
 
-![12.10.9](/assets/images/12.10.9.png)
+![12.10.9]({{site.baseurl}}/assets/images/12.10.9.png)
 
 - Save the flow and Make Live
 
-![12.10.10](/assets/images/12.10.10.png)
+![12.10.10]({{site.baseurl}}/assets/images/12.10.10.png)
 
 - Login to the agent desktop, initiate an SMS to the configured number. Once the interaction pops up on the agent desktop, accept the conversation
 
-![12.10.11](/assets/images/12.10.11.png)
+![12.10.11]({{site.baseurl}}/assets/images/12.10.11.png)
 
 - Test the conversation between the agent and the customer.
 - End the conversation and add a Wrapup Code.
@@ -1788,37 +1788,37 @@ In this lab you will be configuring **WhatsApp** number settings, Assets, Entry 
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 - Navigate to Assets > App and verify that the tenant you are using has a SMS number assigned 
 
-![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment](/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment1.png)
+![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment1.png)
 
 - Identify and make note of the APP ID (We will need this later in the flow configuration)
 
-![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment](/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment2.png)
+![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment2.png)
 
 - Select actions and click **Manage**
 
-![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment](/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment3.png)
+![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment3.png)
 
 - Identify and make a note of the **Number** and **WABA ID** (We will need this later in the flow configuration)
 
-![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment](/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment4.png)
+![DC_Lab_12.11_Verify_Whatsapp_Number_Assignment]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verify_Whatsapp_Number_Assignment4.png)
 
 ## 2. WhatsApp Asset registration to WebexCC
 
 - In the WhatsApp number assigned, under actions select the 'Manage' option 
 
-![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1](/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1.png)
+![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1.png)
 
 - Click 'Register to WebexCC option' 
 
-![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1](/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC2.png)
+![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC2.png)
 
 - In the resulting window, select a service under which this asset would be managed
 
-![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1](/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC3.png)
+![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC3.png)
 
 - Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
 
-![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1](/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC4.png)
+![DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC1]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Asset_registration_to_WebexCC4.png)
 
 ## 3. WhatsApp Entry Point and Queue creation
 
@@ -1826,7 +1826,7 @@ In this lab you will be configuring **WhatsApp** number settings, Assets, Entry 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 - Click on `New Entry Point`.
 
-![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation](/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation1.jpg)
+![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation1.jpg)
 
 - Input **_Name_** as `WhatsApp_EP`.
 - Select `Social Channel` in the **_Channel Type_** section.
@@ -1835,28 +1835,28 @@ In this lab you will be configuring **WhatsApp** number settings, Assets, Entry 
 - The **_Time Zone_** can stay as default value.
 - Click on **Save** after comparing your values with the screenshot below.
 
-![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation](/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation2.png)
+![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation2.png)
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 - Click on `New Queue`.
 
-![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation](/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation3.jpg)
+![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation3.jpg)
 
 - Input **_Name_** as `WhatsApp_Queue`.
 - Select `Social Channel` in the **_Channel Type_** section.
 - Click `Add Group` in the **_Conversation distribution_** section.
 
-![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation](/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation4.png)
+![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation4.png)
 
 - Select the Agent based teams created in the previous lab and click `Save` . Once saved, click `Close` to exit this window. 
 
-![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation](/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation5.png)
+![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation5.png)
 
 - Input **_Maximum Time in Queue_** as `300`.
 - The **_Time Zone_** can stay as default value.
 - Click on **Save** after comparing your values with the screenshot below.
 
-![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation](/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation6.png)
+![DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation]({{site.baseurl}}/assets/images/DC_Lab_12.11_Whatsapp_Entry_Point_and_Queue_creation6.png)
 
 ## 4. Create/Upload WhatsApp flow
 
@@ -1868,27 +1868,27 @@ In this lab you will be configuring **WhatsApp** number settings, Assets, Entry 
 - Enter the **FLOW NAME** as **WhatsApp Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 - Drag and drop the **Whatsapp Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE**
 
-![DC_Lab_12.11_Create-Upload_Whatsapp_flow](/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow2.png)
+![DC_Lab_12.11_Create-Upload_Whatsapp_flow]({{site.baseurl}}/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow2.png)
 
 - Once the flow is saved, the 'Configure WhatsApp Event' node will open. Select incoming message as trigger and click **Save**
 
-![DC_Lab_12.11_Create-Upload_Whatsapp_flow](/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow3.png)
+![DC_Lab_12.11_Create-Upload_Whatsapp_flow]({{site.baseurl}}/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow3.png)
 
 - Open Custom variables and update the value for **WANumber** and **appid** (These are the values that were identified in Step-1) and click on **SAVE**.
 
-![DC_Lab_12.11_Create-Upload_Whatsapp_flow](/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow4.png)
+![DC_Lab_12.11_Create-Upload_Whatsapp_flow]({{site.baseurl}}/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow4.png)
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **WhatsApp_Queue** and click on **SAVE**.
 
-![DC_Lab_12.11_Create-Upload_Whatsapp_flow](/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow5.png)
+![DC_Lab_12.11_Create-Upload_Whatsapp_flow]({{site.baseurl}}/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow5.png)
 
 - Go to ***Resolve Conversation*** node and fill in ***Flow Id*** field with ***flowId*** value copied from the address bar of web browser tab. Then save changes.
 
-![DC_Lab_12.11_Create-Upload_Whatsapp_flow](/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flowID.png)
+![DC_Lab_12.11_Create-Upload_Whatsapp_flow]({{site.baseurl}}/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flowID.png)
 
 - Finally click on Make Live on top right corner and click Make Live.
 
-![DC_Lab_12.11_Create-Upload_Whatsapp_flow](/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow6.png)
+![DC_Lab_12.11_Create-Upload_Whatsapp_flow]({{site.baseurl}}/assets/images/DC_Lab_12.11_Create-Upload_Whatsapp_flow6.png)
 
 - Wait for 2 minutes and verify that the flow is published successfully & shows Live in state. 
 
@@ -1898,35 +1898,35 @@ In this lab you will be configuring **WhatsApp** number settings, Assets, Entry 
 
 - Login to the Agent Desktop and make the agent Available. 
 
-![WA1](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request1.png)
+![WA1]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request1.png)
 
 - In your personal mobile phone, add the WhatsApp number configured in the previous step as a new contact. (The screenshot is for reference. Please use the number assigned to your pod)
 
-![WA2](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request2.png)
+![WA2]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request2.png)
 
 - Open WhatsApp and look up the contact created in the previous step
 
-![WA3](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request3.png)
+![WA3]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request3.png)
 
 - Send a message to the contact identified in the previous step to initiate the conversation. 
 
-![WA4](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request4.png)
+![WA4]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request4.png)
 
 - The WhatsApp contact will be offered to the agent. Click "Accept" to handle the contact.
 
-![WA5](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request5.png)
+![WA5]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request5.png)
 
 - Type a response and hit send button.
 
-![WA6](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request6.png)
+![WA6]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request6.png)
 
 - End the contact
 
-![WA7](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request7.png)
+![WA7]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request7.png)
 
 - Add wrap up and close the task. 
 
-![WA8](/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request8.png)
+![WA8]({{site.baseurl}}/assets/images/DC_Lab_12.11_Verification_-_send_Whatsapp_message_and_accept_the_request8.png)
 
 ---
 
@@ -1963,11 +1963,11 @@ Connect templates can be configured on the platform and used within flows. Here 
 Each kind of template has different set of parameters depending on the type of digital channel which it is intended for.
 - To create a template for any kind of digital channel, login to Connect Portal, then go to ***Tools*** -> ***Templates*** and press ***Add new Template*** button.
 
-![DC_Lab.12.12_Create_Connect_1](/assets/images/DC_Lab_12.12._Create_Connect_1.png)
+![DC_Lab.12.12_Create_Connect_1]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_1.png)
 
 *  You will be redirected to ***Manage Template*** window where you can select ***Channel*** and then provide other parameters of the template.
 
-![DC_Lab.12.12_Create_Connect_2](/assets/images/DC_Lab_12.12._Create_Connect_2.png)
+![DC_Lab.12.12_Create_Connect_2]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_2.png)
 
 
 ## 2. Create Chat Templates in Connect
@@ -1976,19 +1976,19 @@ Let's create Chat Form template which can be used to request initial information
 
 -  Select ***Channel*** as ***Live Chat / In-App Messaging*** in ***Manage Template*** window to create chat template. Then provide ***Name***, ***Message Type*** as ***Form***, ***Title***, and press ***Add Field*** button to add fields to the form. Once all necessary fields have been added, you can see the entire form in ***Preview*** section on the right. Save the template after the form is constructed.
 
-![DC_Lab.12.12_Create_Connect_2](/assets/images/DC_Lab_12.12._Create_Connect_3.png)
+![DC_Lab.12.12_Create_Connect_2]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_3.png)
 
 -  After chat template has been created, you can use it in ***Pre-chat form*** and ***Receive*** nodes of the chat flow to get necessary details from the end user which initiated the chat. After selecting the template save changes and make the flow live.
 
-![DC_Lab.12.12_Create_Connect_2](/assets/images/DC_Lab_12.12._Create_Connect_4.png)
+![DC_Lab.12.12_Create_Connect_2]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_4.png)
 
 -  The end user will get the form created in the template within chat widget.
 
-![DC_Lab.12.12_Create_Connect_2](/assets/images/DC_Lab_12.12._Create_Connect_4_1.png)
+![DC_Lab.12.12_Create_Connect_2]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_4_1.png)
 
 -  The details eneterd by the user in the form will be forwarded to the agent which accepted chat request.
 
-![DC_Lab.12.12_Create_Connect_2](/assets/images/DC_Lab_12.12._Create_Connect_4_2.png)
+![DC_Lab.12.12_Create_Connect_2]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_4_2.png)
 
 
 ## 3. Create Email Templates in Connect
@@ -1997,15 +1997,15 @@ Let's create Email template which notifies end user after incoming request over 
 
 -  Select ***Channel*** as ***Email*** in ***Manage Template*** window to create email template. Then provide ***Name***, ***Reference ID***, ***Template Type***, ***Subject*** and save changes.
 
-![DC_Lab.12.12_Create_Connect_5](/assets/images/DC_Lab_12.12._Create_Connect_5.png)
+![DC_Lab.12.12_Create_Connect_5]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_5.png)
 
 -  You will be redirected to Email Composer. Please build the email using the canvas in the center and building blocks on the left-hand side. After email template is ready, press ***Save & Exit*** at the top right corner.
 
-![DC_Lab.12.12_Create_Connect_6_1](/assets/images/DC_Lab_12.12._Create_Connect_6_1.png)
+![DC_Lab.12.12_Create_Connect_6_1]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_6_1.png)
 
 -  Insert Email node into the corresponding flow just after Queue Task node. Provide necessary details including ***Email Type***, ***Template Type***, ***Template***, save changes and make the flow live.
 
-![DC_Lab.12.12_Create_Connect_6_2](/assets/images/DC_Lab_12.12._Create_Connect_6_2.png)
+![DC_Lab.12.12_Create_Connect_6_2]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_6_2.png)
 
 -  After the flow is triggered and email request is queued, the end user will be notified over email.
 
@@ -2016,11 +2016,11 @@ Let's create SMS template which notifies end user after incoming request over SM
 
 -  Select ***Channel*** as ***SMS*** in ***Manage Template*** window to create SMS template. Then provide ***Name***, ***Message Type***, ***Message***, ***Template Type*** and save changes.
 
-![DC_Lab.12.12_Create_Connect_7](/assets/images/DC_Lab_12.12._Create_Connect_7.png)
+![DC_Lab.12.12_Create_Connect_7]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_7.png)
 
 -  Insert SMS node into the corresponding flow just after Queue Task node. Provide necessary details including ***Template***, save changes and make the flow live.
 
-![DC_Lab.12.12_Create_Connect_8](/assets/images/DC_Lab_12.12._Create_Connect_8.png)
+![DC_Lab.12.12_Create_Connect_8]({{site.baseurl}}/assets/images/DC_Lab_12.12._Create_Connect_8.png)
 
 -  After the flow is triggered and SMS request is queued, the end user will be notified over SMS.
 
@@ -2078,26 +2078,26 @@ Here are few key points to note about Engage templates which provide better unde
 
 -  Login to WxCC Management Portal access the menu and cross launch Engage Portal by choosing ***New Digital Channels***.
 
-![DC_Lab.12.8_Create_Website_1](/assets/images/DC_Lab_12.8._Create_Website_1.png)
+![DC_Lab.12.8_Create_Website_1]({{site.baseurl}}/assets/images/DC_Lab_12.8._Create_Website_1.png)
 
 *  Go to ***Assets*** -> ***Templates*** and press **''+"** button near ***TEMPLATE GROUPS*** section.
 
-![DC_Lab.12.13_Create_Engage_1](/assets/images/DC_Lab_12.13._Create_Engage_1.png)
+![DC_Lab.12.13_Create_Engage_1]({{site.baseurl}}/assets/images/DC_Lab_12.13._Create_Engage_1.png)
 
 -  Provide ***Template Group name*** and press ***Add*** button to save it.
 
-![DC_Lab.12.13_Create_Engage_2](/assets/images/DC_Lab_12.13._Create_Engage_2.png)
+![DC_Lab.12.13_Create_Engage_2]({{site.baseurl}}/assets/images/DC_Lab_12.13._Create_Engage_2.png)
 
 -  You can delet existing template group by clicking on bin icon near the template name in ***TEMPLATE GROUPS*** section.
 
-![DC_Lab.12.13_Create_Engage_3](/assets/images/DC_Lab_12.13._Create_Engage_3.png)
+![DC_Lab.12.13_Create_Engage_3]({{site.baseurl}}/assets/images/DC_Lab_12.13._Create_Engage_3.png)
 
 
 ## 3. Create Engage Templates
 
 -  Go to ***Assets*** -> ***Templates***, click on template group name in ***TEMPLATE GROUPS*** section. Then press ***Add template*** button.
 
-![DC_Lab.12.13_Create_Engage_4](/assets/images/DC_Lab_12.13._Create_Engage_4.png)
+![DC_Lab.12.13_Create_Engage_4]({{site.baseurl}}/assets/images/DC_Lab_12.13._Create_Engage_4.png)
 
 -  Let's create start template for web chat channel. Please click on ***Livechat*** in template header and provide necessary template details:
 
@@ -2111,53 +2111,53 @@ Here are few key points to note about Engage templates which provide better unde
 
 >***Note:*** You can lock the template by enabling ***Lock Template*** toggle. In this case agent will not be allowed to modify the text of the template before sending the message to the end user.
 
-![DC_Lab.12.13_Create_Engage_5](/assets/images/DC_Lab_12.13._Create_Engage_5_1.png)
+![DC_Lab.12.13_Create_Engage_5]({{site.baseurl}}/assets/images/DC_Lab_12.13._Create_Engage_5_1.png)
 
 -  You can edit or delete the template by clicking on corresponding icon in the ***Actions*** column in the table with template details.
 
-![DC_Lab.12.13_Create_Engage_6](/assets/images/DC_Lab_12.13._Create_Engage_6_1.png)
+![DC_Lab.12.13_Create_Engage_6]({{site.baseurl}}/assets/images/DC_Lab_12.13._Create_Engage_6_1.png)
 
 
 ## 4. Bulk Upload of Engage Templates
 
 -  Go to ***Assets*** -> ***Templates***, click on ***Upload template*** button.
 
-![DC_Lab.12.13_Bulk_Engage_1](/assets/images/DC_Lab_12.13._Bulk_Engage_1_1.png)
+![DC_Lab.12.13_Bulk_Engage_1]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_1_1.png)
 
 -  Click on ***Download sample file here*** link to download CSV sample file.
 
-![DC_Lab.12.13_Bulk_Engage_2](/assets/images/DC_Lab_12.13._Bulk_Engage_2.png)
+![DC_Lab.12.13_Bulk_Engage_2]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_2.png)
 
 -  Open sample file, provide necessary values according to ***Help Notes*** section. Then delete ***Help Notes*** section and save changes.
 
-![DC_Lab.12.13_Bulk_Engage_3](/assets/images/DC_Lab_12.13._Bulk_Engage_3.png)
+![DC_Lab.12.13_Bulk_Engage_3]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_3.png)
 
 -  Return to ***Upload Template*** window, press ***upload file*** button and select the file you created above.
 
-![DC_Lab.12.13_Bulk_Engage_4](/assets/images/DC_Lab_12.13._Bulk_Engage_4.png)
+![DC_Lab.12.13_Bulk_Engage_4]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_4.png)
 
 -  Check and make sure there were no conflicts found. Then click on ***Proceed*** button.
 
-![DC_Lab.12.13_Bulk_Engage_5](/assets/images/DC_Lab_12.13._Bulk_Engage_5.png)
+![DC_Lab.12.13_Bulk_Engage_5]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_5.png)
 
 -  Make sure your file is being processed and press ***OK*** button in pop-up window.
 
-![DC_Lab.12.13_Bulk_Engage_6](/assets/images/DC_Lab_12.13._Bulk_Engage_6.png)
+![DC_Lab.12.13_Bulk_Engage_6]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_6.png)
 
 -  Uploaded template will be added to the list.
 
-![DC_Lab.12.13_Bulk_Engage_7](/assets/images/DC_Lab_12.13._Bulk_Engage_7_1.png)
+![DC_Lab.12.13_Bulk_Engage_7]({{site.baseurl}}/assets/images/DC_Lab_12.13._Bulk_Engage_7_1.png)
 
 
 ## 5. Verify Engage Template in Agent Desktop
 
 -  Start web chat with the end user and make sure you are able to select the template in agent desktop and send the message.
 
-![DC_Lab.12.13_Validate_1](/assets/images/DC_Lab_12.13._Validate_1.png)
+![DC_Lab.12.13_Validate_1]({{site.baseurl}}/assets/images/DC_Lab_12.13._Validate_1.png)
 
-![DC_Lab.12.13_Validate_2](/assets/images/DC_Lab_12.13._Validate_2.png)
+![DC_Lab.12.13_Validate_2]({{site.baseurl}}/assets/images/DC_Lab_12.13._Validate_2.png)
 
-![DC_Lab.12.13_Validate_3](/assets/images/DC_Lab_12.13._Validate_3.png)
+![DC_Lab.12.13_Validate_3]({{site.baseurl}}/assets/images/DC_Lab_12.13._Validate_3.png)
 
 ---
 
@@ -2627,7 +2627,7 @@ The Event Scheduler page gives access to:
 - SFTP – to manage external data sources to feed the scheduled tasks
 - Settings – to manage Social Hours (business hours) and holidays
 
-![DC_Lab.12.17_Introduction_EventScheduler](/assets/images/DC_Lab.12.17_Introduction_EventScheduler.png)
+![DC_Lab.12.17_Introduction_EventScheduler]({{site.baseurl}}/assets/images/DC_Lab.12.17_Introduction_EventScheduler.png)
 
 ## 2. Schedule SMS Event
 
@@ -2635,15 +2635,15 @@ Configuring scheduled outbound SMS campaign only require the setup inside the Ev
 
 -   Inside Webex Connect portal, click on App Tray & then click on Event Scheduler.
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event1.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event1.png)
 
 -  From the Scheduler menu click on Add Schedule
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event2.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event2.png)
 
 -   Click on SMS
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event3.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event3.png)
 
 -   Select options as described below & click Next
 	- Select Service : The Service you've setup.
@@ -2651,7 +2651,7 @@ Configuring scheduled outbound SMS campaign only require the setup inside the Ev
 	- Sender ID :  Select the number from where the SMS will be sent out
 	- Extra Parameters : are only required in case of specific in-country regulation
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event4.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event4.png)
 
 -   Open MS Excel or any other CSV file editor & Add the following column names:
 
@@ -2662,23 +2662,23 @@ Configuring scheduled outbound SMS campaign only require the setup inside the Ev
 -   Save the file.
 -   Choose if to upload a file created in previous step or use an existing SFTP connection. For this lab, we'll choose Upload File.
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event5.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event5.png)
 
 - Once the file is imported, the scheduler will validate the file and its content. As Recipient Variable select the column containing the Destination numbers for your message.
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event6.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event6.png)
 
 - Build the custom message in the Message Body and use $(ColumnName) to add the values from the desired column as part of the text & Click Next.
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event7.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event7.png)
 
 - Add a name for this Event & Click Next.
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event8.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event8.png)
 
 - Choose a schedule for this event to be executed & Click Save.
 
-![DC_Lab.12.17_Schedule_SMS_Event1](/assets/images/DC_Lab.12.17_Schedule_SMS_Event9.png)
+![DC_Lab.12.17_Schedule_SMS_Event1]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_SMS_Event9.png)
 
 ## 3. Schedule Custom Event
 
@@ -2692,11 +2692,11 @@ Custom Events use source files containing data that will be used by flows when s
 
 -  Inside Webex Connect portal, click on Assets & then click on Integrations.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event1.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event1.png)
 
 -   Click on Add Integrations & then click on Custom Event
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event2.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event2.png)
 
 -   Name the event (i.e. “EVENT Appointment Reminder”)
 -   Add the following parameters:
@@ -2704,7 +2704,7 @@ Custom Events use source files containing data that will be used by flows when s
 	- name (String)
 	- destination (String)
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event3.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event3.png)
 
 -   Leave rest of the config unchanged & Click on the Save button.
 
@@ -2713,51 +2713,51 @@ Custom Events use source files containing data that will be used by flows when s
 -   Inside Webex Connect portal, navigate to Services > Select the desired service > Click on Flows > Click on Create Flow.
 -   Enter Flow name (e.g., “AppointmentReminder”). In the ‘Method’ select New Flow, Select Start from Scratch & Click Create.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event4.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event4.png)
 
 -   On the Select Trigger Category page, click Custom Event
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event5.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event5.png)
 
 -   Once the flow editor loads the Configure Custom Event node will automatically open. From Select Event dropdown, select ‘EVENT Appointment Reminder’ & the list of Parameters will automatically populate. Click Save.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event6.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event6.png)
 
 -   From node menu (left) select Branch node and drag it in to flow canvas (right).
 -   Connect Configure Custom Event node to Branch node
 -   Edit Branch node (double click on the node)
 -   Click in the Branch 1 VARIABLE field (on left), select from the Input Variables list (on right ) ‘Start’ > customEvent.type
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.1.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.1.png)
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.2.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.2.png)
 
 - From the Condition drop-down menu select ‘Equals’
 - In the VALUE field enter “email” (without quotes)
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.3.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.3.png)
 
 - Rename Branch 1 into ‘EMAIL’
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.4.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event7.4.png)
 
 - Click on Add Branch
 - Click in the Branch 2 VARIABLE field (on left), select from the Input Variables list (on right ) ‘Start’ > customEvent.type
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event8.1.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event8.1.png)
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event8.2.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event8.2.png)
 
 - From the Condition drop-down menu select ‘Equals’
 - In the VALUE field enter “SMS” (without quotes)
 - Rename Branch 2 into ‘SMS’
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event8.3.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event8.3.png)
 
 - Click Save.
 - From the node menu (left) select the Email node and drag it in the flow. Repeat this step so to have 2x Email nodes in the flow. Also do the same for getting one SMS node.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event9.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event9.png)
 
 -   Edit the first Email node as described below & click Save.
 	- In Destination Type select Email Id
@@ -2767,7 +2767,7 @@ Custom Events use source files containing data that will be used by flows when s
 	- In Subject enter “Gentle reminder about your booking”
 	- In Message enter “Hi $(n2.customEvent.name), we would like to remind you that your appointment is tomorrow!”
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event10.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event10.png)
 
 - Edit the first SMS node as described below & click Save.
 
@@ -2777,7 +2777,7 @@ Custom Events use source files containing data that will be used by flows when s
 	- In Message Type select Text.
 	- In Message enter “Hi $(n2.customEvent.name), we would like to remind you that your appointment is tomorrow!”
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event11.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event11.png)
 
 - Edit the second Email node as described below & click Save.
 
@@ -2795,37 +2795,37 @@ Custom Events use source files containing data that will be used by flows when s
 	 Destination = $(n2.customEvent.destination)
 	 The message has not been delivered.”
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event12.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event12.png)
 
 - Click on the Settings icon (near the Save button on the top-right) & enable the Descriptive logs toggle, put 60 in "Enabled for" field to enable Descriptive logs for an hour. Click on Save
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event13.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event13.png)
 
 - Click on Save (on the top-right of the flow canvas).
 - Drag the Successful Outcome from the SMS and Email nodes to any empty point of the flow canvas. On the screen that opens, as Node Event, select OnSuccess & as Flow Result, select 101 –…[ Success ]. Click Save
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event14.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event14.png)
 
 - Drag the Error Outcome from the SMS and Email nodes to any empty point of the flow canvas. On the screen that opens, as Node Event, select OnError & as Flow Result, select 102 –…[ Error ]. Click Save
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event15.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event15.png)
 
 -  Drag the Error Outcome from the SMS and Email nodes to any empty point of the flow canvas. On the screen that opens, as Node Event, select OnPolicyFail & as Flow Result, select 102 –…[ Error ]. Click Save
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event16.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event16.png)
 
 - Connect the Branch node from the Successful Outcome to the first Email node & Select EMAIL from the drop-down menu that will pop-up.
 - Connect the Branch node from the Successful Outcome to the SMS node & Select SMS from the drop-down menu that will pop-up.
 - Connect the Branch node from the Successful Outcome to the second Email node (the ‘None of the above’ option will be automatically selected).
 - Connect the Branch node from the Error Outcome to the second Email node.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event17.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event17.png)
 
 -  Click on MAKE LIVE (near the Save button on the top-right), Select the preconfigured Email Application (from where outbound emails will be sent) & Click on Make Live.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event18.1.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event18.1.png)
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event18.2.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event18.2.png)
 
 - Open MS Excel or any other CSV file editor & Add the following column names:
 
@@ -2840,31 +2840,31 @@ Custom Events use source files containing data that will be used by flows when s
 
 - Inside Webex Connect portal navigate to App Tray & click on Event Scheduler
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event19.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event19.png)
 
 - On Scheduler page, click on Add Schedule button.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event20.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event20.png)
 
 - Click Custom Event
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event21.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event21.png)
 
 - Select the Service containing the AppointmentReminder flow & Select EVENT Appointment Reminder from the ‘Select Event / Inbound Webhook’ drop-down menu. Click Next.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event22.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event22.png)
 
 - Select ‘Upload File’, Drag and drop the previously created spreadsheet in the marked area for file drop. The page will automatically refresh and will request the admin to map the Custom Event Integration parameters with the Column Names in the loaded file. Map the FILE HEADERS as the name indicates. The page will automatically refresh and will notify about Total, Valid, Invalid and Duplicate Rows from the file (for additional validation). Click on Next button
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event23.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event23.png)
 
 - Add “Appointment Reminder Schedule” as name for this Event & Click on Next button
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event24.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event24.png)
 
 - Choose ‘Immediate’ as the execution schedule for this event (the event will be actually executed 2 minutes later). Click Save.
 
-![DC_Lab.12.17_Schedule_Custom_Event](/assets/images/DC_Lab.12.17_Schedule_Custom_Event25.png)
+![DC_Lab.12.17_Schedule_Custom_Event]({{site.baseurl}}/assets/images/DC_Lab.12.17_Schedule_Custom_Event25.png)
 
 ---
 
@@ -2892,7 +2892,7 @@ Inbound Webhooks generate a unique endpoint that can be embedded into your appli
 
 In this lab, we will explore how an Inbound Webhook can be used to generate an email to a customer that initiated the contact through a voice call.
 
-![12.18.1.png](/assets/images/12.18.1.png)
+![12.18.1.png]({{site.baseurl}}/assets/images/12.18.1.png)
 
 #### Pre-requisite
 
@@ -2917,11 +2917,11 @@ In this lab, we will explore how an Inbound Webhook can be used to generate an e
 
 -   Click on Assets ---> Integrations from the left navigation pane 
 
-![12.18.2.png](/assets/images/12.18.2.png)
+![12.18.2.png]({{site.baseurl}}/assets/images/12.18.2.png)
 
 -   Click on the Add Integration button and select Inbound Webhook
 
-![12.18.3.png](/assets/images/12.18.3.png)
+![12.18.3.png]({{site.baseurl}}/assets/images/12.18.3.png)
 
 - Enter a unique name for the Inbound Webhook and enter the JSON data as follows. Click on Parse and Save.
 
@@ -2932,28 +2932,28 @@ In this lab, we will explore how an Inbound Webhook can be used to generate an e
     "maintenance":"maintenance notification"
 }
 
-![12.18.4.png](/assets/images/12.18.4.png)
+![12.18.4.png]({{site.baseurl}}/assets/images/12.18.4.png)
 
 - Navigate to the Service you created earlier on in the labs and click on Create blank Flow.
 
-![12.18.5.png](/assets/images/12.18.5.png)
+![12.18.5.png]({{site.baseurl}}/assets/images/12.18.5.png)
 
 - Give the flow a unique name and click on create flow button.
 - Select the Trigger Category as Webhook
 
-![12.18.6.png](/assets/images/12.18.6.png)
+![12.18.6.png]({{site.baseurl}}/assets/images/12.18.6.png)
 
 - Select the Webhook you created in a previous step and click Save.
 
-![12.18.7.png](/assets/images/12.18.7.png)
+![12.18.7.png]({{site.baseurl}}/assets/images/12.18.7.png)
 
 - Drag and drop the Email node from the left pane and connect the two nodes.
 
-![12.18.8.png](/assets/images/12.18.8.png)
+![12.18.8.png]({{site.baseurl}}/assets/images/12.18.8.png)
 
 - Double click on the Email node to access the settings and details as shown below. Click Save.
 
-![12.18.9.png](/assets/images/12.18.9.png)
+![12.18.9.png]({{site.baseurl}}/assets/images/12.18.9.png)
 
 - Save the flow and make the flow Live.
 
@@ -2969,9 +2969,9 @@ Request Body:
 "outage": "Current power outages are applicable for the suburbs 2118, 2456, 2761, 2229"
 }
 
-![12.18.10.png](/assets/images/12.18.10.png)
+![12.18.10.png]({{site.baseurl}}/assets/images/12.18.10.png)
 
-![12.18.11.png](/assets/images/12.18.11.png)
+![12.18.11.png]({{site.baseurl}}/assets/images/12.18.11.png)
 
 - Save and publish the flow.
 
@@ -2982,7 +2982,7 @@ Request Body:
 - After making the selection and the call should get disconnected.
 - Check the email box of the Destination Email address that was entered in the Webex Connect flow to ensure the email has been received.
 
-![12.18.12.png](/assets/images/12.18.12.png)
+![12.18.12.png]({{site.baseurl}}/assets/images/12.18.12.png)
 
 ---
 
@@ -3032,7 +3032,7 @@ This tool allows Webex Connect admin to download inbound and outbound log events
 
 Please login to Connect Portal, then go to ***Tools*** -> ***Export Logs*** to access the tool.
 
-![DC_Lab.12.19_Export_Logs_1](/assets/images/DC_Lab_12.19._Export_Logs_1.png)
+![DC_Lab.12.19_Export_Logs_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Export_Logs_1.png)
 
 Let's download all incoming messages received via ***Chat_Asset*** for the last 7 days. We need to provide the following details and press ***Download*** button:
 
@@ -3042,11 +3042,11 @@ Let's download all incoming messages received via ***Chat_Asset*** for the last 
 | Channel Event  | Incoming Message |
 | Period         | Last 7 days      |
 
-![DC_Lab.12.19_Export_Logs_2](/assets/images/DC_Lab_12.19._Export_Logs_2.png)
+![DC_Lab.12.19_Export_Logs_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Export_Logs_2.png)
 
 After the log file has been downloaded, we can open the file and see all inbound events, including timestamps, IDs and message text. We can use the file to check whether specific message rom the end user has been received by Webex Connect via selected Number or App (asset).
 
-![DC_Lab.12.19_Export_Logs_3](/assets/images/DC_Lab_12.19._Export_Logs_3.png)
+![DC_Lab.12.19_Export_Logs_3]({{site.baseurl}}/assets/images/DC_Lab_12.19._Export_Logs_3.png)
 
 Now, let's download all outbound messages for ***My First Service*** for the last 7 days. We need to provide the following details and press ***Download*** button:
 
@@ -3056,11 +3056,11 @@ Now, let's download all outbound messages for ***My First Service*** for the las
 | Channel        | Live Chat / In-App Messaging |
 | Period         | Last 7 days                  |
 
-![DC_Lab.12.19_Export_Logs_4](/assets/images/DC_Lab_12.19._Export_Logs_4.png)
+![DC_Lab.12.19_Export_Logs_4]({{site.baseurl}}/assets/images/DC_Lab_12.19._Export_Logs_4.png)
 
 After the log file has been downloaded, we can open the file and see all outbound events, incliding timestamps, IDs and message text. We can use this log to check whether exact message has been sent to the end user by Webex Connect via selected Service / Channel.
 
-![DC_Lab.12.19_Export_Logs_5](/assets/images/DC_Lab_12.19._Export_Logs_5.png)
+![DC_Lab.12.19_Export_Logs_5]({{site.baseurl}}/assets/images/DC_Lab_12.19._Export_Logs_5.png)
 
 #### 1.2. Flow Debugger 
 
@@ -3078,15 +3078,15 @@ This tool allows Webex Connect admin to track flow execution from the beginning 
 
 Login to Connect Portal and go to ***Settings*** -> ***Teammates*** and loot at ***Decryption Access*** column to check which accounts on Connect Portal have log decryption permission. For example:
 
-![DC_Lab.12.19_Flow_Debugger_1](/assets/images/DC_Lab_12.19._Flow_Debugger_1.png)
+![DC_Lab.12.19_Flow_Debugger_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Flow_Debugger_1.png)
 
 To grant ***Decryption Access*** permission to some admin account, check and make sure you are logged in under admin account with ***Owner*** permission. Then click ***Edit*** button next to the desired admin account, tick ***Decrypt Logs*** check box in the pop-up window with account details and save changes.
 
-![DC_Lab.12.19_Flow_Debugger_2](/assets/images/DC_Lab_12.19._Flow_Debugger_2.png)
+![DC_Lab.12.19_Flow_Debugger_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Flow_Debugger_2.png)
 
 Check and make sure ***Decryption Access*** permission is visible next to the desired admin account in the list of users.
 
-![DC_Lab.12.19_Flow_Debugger_3](/assets/images/DC_Lab_12.19._Flow_Debugger_3.png)
+![DC_Lab.12.19_Flow_Debugger_3]({{site.baseurl}}/assets/images/DC_Lab_12.19._Flow_Debugger_3.png)
 
 
 ## 2. Debugging a flow
@@ -3097,35 +3097,35 @@ Flow debugger is embedded into Webex Connect flow builedr. Let's have a look how
 -  Once the flow is loaded, click on ***Debug*** button on the right pane. Flow debugger window will
 appear at the bottom. This window is scalable, so we can adjust its size to make troublehooting process more convenient.
 
-![DC_Lab.12.19_Debugging_Flow_1](/assets/images/DC_Lab_12.19._Debugging_Flow_1.png)
+![DC_Lab.12.19_Debugging_Flow_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_1.png)
 
 -  Provide proper time frame or ***Transaction ID*** (if you know it) and press ***Search*** button to find corresponding flow events. You will see all found flow events as a list in debugger window. Each line of the list represents single flow execution.
 
-![DC_Lab.12.19_Debugging_Flow_2](/assets/images/DC_Lab_12.19._Debugging_Flow_2.png)
+![DC_Lab.12.19_Debugging_Flow_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_2.png)
 
 -  Click on the corresponding hyperlink in ***Transaction ID*** column to see the details of exact flow execution. Those details will be displayed as a list at a separate tab in the same debugger window. The title of the tab will be the value of the Transaction ID.
 
-![DC_Lab.12.19_Debugging_Flow_3](/assets/images/DC_Lab_12.19._Debugging_Flow_3.png)
+![DC_Lab.12.19_Debugging_Flow_3]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_3.png)
 
 -  Select one item from the list to see its details on the right-hand side of debugging window. All details of the event are encrypted by default. Click on ***DECRYPT LOGS*** button in the title of debuggin screen to see decrypted log messages.
 
-![DC_Lab.12.19_Debugging_Flow_4](/assets/images/DC_Lab_12.19._Debugging_Flow_4.png)
+![DC_Lab.12.19_Debugging_Flow_4]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_4.png)
 
 -  Decrypted log messages will be displayed on the right-hand side of debuggin window. Those log messages include the parameters used when calling the node as well as the results returned by the node after the request was processed. You can copy the value of any debug message by pressing copy icon next to the message on the right-hand side of debugging window.
 
-![DC_Lab.12.19_Debugging_Flow_5](/assets/images/DC_Lab_12.19._Debugging_Flow_5.png)
+![DC_Lab.12.19_Debugging_Flow_5]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_5.png)
 
 -  All items in the list have ***Node ID*** and ***Node*** which matches the same values for each node on flow canvas.
 
-![DC_Lab.12.19_Debugging_Flow_6](/assets/images/DC_Lab_12.19._Debugging_Flow_6.png)
+![DC_Lab.12.19_Debugging_Flow_6]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_6.png)
 
 -  So, every time you click on any item in the list in debugging window the log messages of this node are displayed on the righ-hand side. In addition, corresponding node is highlighted with a blue border on flow canvas, which simplifies troubleshhoting.
 
-![DC_Lab.12.19_Debugging_Flow_7](/assets/images/DC_Lab_12.19._Debugging_Flow_7.png)
+![DC_Lab.12.19_Debugging_Flow_7]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_7.png)
 
 -  The ***OUTCOME*** column of the list shows the result of execuiting each flow node. In case if any node has been completed with an error or timeout, it will be displayed as an outcome in the line of the list which corresponds to the affected flow node. Error details will be available on rigth-hand side of debugging window.
 
-![DC_Lab.12.19_Debugging_Flow_8](/assets/images/DC_Lab_12.19._Debugging_Flow_8.png)
+![DC_Lab.12.19_Debugging_Flow_8]({{site.baseurl}}/assets/images/DC_Lab_12.19._Debugging_Flow_8.png)
 
 In the next section we will look at the most common issues in Webex Connect flows and how to solve them.
 
@@ -3138,7 +3138,7 @@ Let's look at few examples of the most commn issues in Webex Connect flows. We w
 
 Here is an example of what will happen if live chat app (asset) is not assigned to the Entry Point on Webex CC management portal. Flow debugger disaplays ***onInvalidChoice*** error next to the affected ***Create Task*** node. The error on the right-hand side of debugging window contains ***desc : no valid edge found for the async event*** message.
 
-![DC_Lab.12.19_Error_No_EP_1](/assets/images/DC_Lab_12.19._Error_No_EP_1.png)
+![DC_Lab.12.19_Error_No_EP_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_No_EP_1.png)
 
 Please follow the action plan below to fox the issue:
 1. Please check which app/asset is assigned to the affected flow on Connect Portal.
@@ -3150,11 +3150,11 @@ Please follow the action plan below to fox the issue:
 
 Here is an example where Webex CC authorization does not work properly. Flow debugger disaplays ***onInvalidData*** error next to the affected Engage node.
 
-![DC_Lab.12.19_Error_Engage_Auth_1](/assets/images/DC_Lab_12.19._Error_Engage_Auth_1.png)
+![DC_Lab.12.19_Error_Engage_Auth_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Engage_Auth_1.png)
 
 The error ***desc : Authorization not found*** means the autorization configured in ***NODE RUNTIME AUTHORIZATION*** field of ***Search Conversation*** node does not work.
 
-![DC_Lab.12.19_Error_Engage_Auth_2](/assets/images/DC_Lab_12.19._Error_Engage_Auth_2.png)
+![DC_Lab.12.19_Error_Engage_Auth_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Engage_Auth_2.png)
 
 Potential ways to fix the issue:
 
@@ -3164,26 +3164,26 @@ Potential ways to fix the issue:
 
 2. If correct autorization is selected in ***NODE RUNTIME AUTHORIZATION*** field of the affected node, but it fails, please update selected authorization. Go to ***Assets*** -> ***Integrations*** -> ***Webex CC Engage*** and select ***Manage*** from the drop-down list next to the integartion name. For example:
 
-![DC_Lab.12.19_Error_Engage_Auth_3](/assets/images/DC_Lab_12.19._Error_Engage_Auth_3.png)
+![DC_Lab.12.19_Error_Engage_Auth_3]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Engage_Auth_3.png)
 
 Then scroll down to ***Node Authorizations***, click on arrow button to expand the list and select ***Update*** from ***Actions*** list next to the affected authorization.
 
-![DC_Lab.12.19_Error_Engage_Auth_4](/assets/images/DC_Lab_12.19._Error_Engage_Auth_4.png)
+![DC_Lab.12.19_Error_Engage_Auth_4]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Engage_Auth_4.png)
 
 Then click on ***Authorize*** button in the pop-up window and provide credentials if needed to update Webex CC authorization.
 
-![DC_Lab.12.19_Error_Engage_Auth_5](/assets/images/DC_Lab_12.19._Error_Engage_Auth_5.png)
+![DC_Lab.12.19_Error_Engage_Auth_5]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Engage_Auth_5.png)
 
 
 #### 3.3. Webex CC authorization not working
 
 Here is an example where Webex CC authorization does not work properly. Flow debugger disaplays ***onauthorizationfail*** error next to the affected Webex CC node.
 
-![DC_Lab.12.19_Error_WebexCC_Auth_1](/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_1.png)
+![DC_Lab.12.19_Error_WebexCC_Auth_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_1.png)
 
 The error ***desc : unauthorized, integration :Create Task, method : Create Task*** means the autorization configured in ***NODE RUNTIME AUTHORIZATION*** field of ***Create Task*** node does not work.
 
-![DC_Lab.12.19_Error_WebexCC_Auth_2](/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_2.png)
+![DC_Lab.12.19_Error_WebexCC_Auth_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_2.png)
 
 Potential ways to fix the issue:
 
@@ -3191,27 +3191,27 @@ Potential ways to fix the issue:
 
 2. If correct autorization is selected in ***NODE RUNTIME AUTHORIZATION*** field of the affected node, but it fails, please make sure proper account is still active on Control Hub. Then go to ***Assets*** -> ***Integrations*** -> ***Webex CC Task*** and select ***Manage*** from the drop-down list next to the integartion name. For example:
 
-![DC_Lab.12.19_Error_WebexCC_Auth_3](/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_3.png)
+![DC_Lab.12.19_Error_WebexCC_Auth_3]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_3.png)
 
 Then scroll down to ***Node Authorizations***, click on arrow button to expand the list and select ***Update*** from ***Actions*** list next to the affected authorization.
 
-![DC_Lab.12.19_Error_WebexCC_Auth_4](/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_4.png)
+![DC_Lab.12.19_Error_WebexCC_Auth_4]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_4.png)
 
 Then click on ***Authorize*** button in the pop-up window and provide credentials if needed to update Webex CC authorization.
 
-![DC_Lab.12.19_Error_WebexCC_Auth_5](/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_5.png)
+![DC_Lab.12.19_Error_WebexCC_Auth_5]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_WebexCC_Auth_5.png)
 
 
 #### 3.4. Variable does not exist or has an empty value
 
 Here is an example where the variable assigned to one of the parameters of flow node does not exist or has empty value. Flow debugger disaplays ***onError*** error next to the affected ***Create Task*** node.
 
-![DC_Lab.12.19_Error_No_Value_1](/assets/images/DC_Lab_12.19._Error_No_Value_1.png)
+![DC_Lab.12.19_Error_No_Value_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_No_Value_1.png)
 
 The error ***desc : value is mandatory , name : task id*** means ***TASK ID*** parameter of ***Create Task*** node had no value when the node was executed. It could happen if the variable assigned to ***TASK ID*** did not exist or had an empty value. 
 To fix this issue, we need to open the configuration of ***Cretae Task*** node and check the value of ***TASK ID*** parameter. In our case there is a variable ***$(flid_na)***, which does not exist and that's why there was an empty value used when calling ***Create Task*** node. 
 
-![DC_Lab.12.19_Error_No_Value_2](/assets/images/DC_Lab_12.19._Error_No_Value_2.png)
+![DC_Lab.12.19_Error_No_Value_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_No_Value_2.png)
 
 Potential ways to fix the issue:
 1. Correct variable name if it is wrong and check the value of this variable
@@ -3223,11 +3223,11 @@ Potential ways to fix the issue:
 
 Here is an example where the variable or parameter of a flow node has wrong value. Flow debugger disaplays ***onAppendMessageFailure*** error next to the affected ***Append Conversation*** node.
 
-![DC_Lab.12.19_Error_Wrong_Value_1](/assets/images/DC_Lab_12.19._Error_Wrong_Value_1.png)
+![DC_Lab.12.19_Error_Wrong_Value_1]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Wrong_Value_1.png)
 
 The error ***""description":"Chat ID provided does not exist","event":"conversation-message:error","value":{"conversationId":"this-is-wrong-ID-just-for-example","aliasId":""}"*** means that ***CONVERSATION ID*** parameter of ***Append Conversation*** node has wrong value - ***"this-is-wrong-ID-just-for-example"***. Please double-click on the affected node and correct the value of ***CONVERSATION ID*** parameter to fix the issue. Then save changes and make the flow live. 
 
-![DC_Lab.12.19_Error_Wrong_Value_2](/assets/images/DC_Lab_12.19._Error_Wrong_Value_2.png)
+![DC_Lab.12.19_Error_Wrong_Value_2]({{site.baseurl}}/assets/images/DC_Lab_12.19._Error_Wrong_Value_2.png)
 
 ---
 
@@ -3276,19 +3276,19 @@ This lab walks you through the creation of custom node and a demo of its usage. 
 -   Login in to Webex Connect portal
 -   From left column, navigate to “Integrations”
 
-![Lab12.20_CustomNodeIntegrations](/assets/images/Lab12.20_CustomNodeIntegrations.png)
+![Lab12.20_CustomNodeIntegrations]({{site.baseurl}}/assets/images/Lab12.20_CustomNodeIntegrations.png)
 
 #### 1.2. Add Custom Node
 
 -   In Integrations, click ‘Add Integration’
 -   Select ‘Custom Node’
 
-![Lab12.20_CustomNodeAddIntegrations](/assets/images/Lab12.20_CustomNodeAddIntegrations.png)
+![Lab12.20_CustomNodeAddIntegrations]({{site.baseurl}}/assets/images/Lab12.20_CustomNodeAddIntegrations.png)
 
 -   Name your Custom Node, select ‘Custom Nodes’ under Node Category and click OK. For easy tracking of configurations, please use the Attendee ID as part of your node name. For example:
 	Node Name: AttendeeID_CustomNode
 
-![Lab12.20_CustomNodeCreateNew](/assets/images/Lab12.20_CustomNodeCreateNew.png)
+![Lab12.20_CustomNodeCreateNew]({{site.baseurl}}/assets/images/Lab12.20_CustomNodeCreateNew.png)
 
 #### 1.3. Configure REST API under Settings tab 
 
@@ -3313,7 +3313,7 @@ Here a quick Demo via calling EP into Webhook to invoke custom node to update Wx
 
 **Note**: The ppt presented in the video has an error. The HTTP Request to Webhook is a POST request. Please refer to the diagram below.
 
-![Lab12.20_CustomNodeDemo](/assets/images/Lab12.20_CustomNodeDemo.png)
+![Lab12.20_CustomNodeDemo]({{site.baseurl}}/assets/images/Lab12.20_CustomNodeDemo.png)
 
 ---
 
@@ -3364,23 +3364,23 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 - Login to Webex Connect portal. From Left column, navigate to Assets--> Integrations
 
-![12.21_1](/assets/images/12.21_1.png)
+![12.21_1]({{site.baseurl}}/assets/images/12.21_1.png)
 
 - Click on Add Integration-->Inbound Webhook
 
-![12.21_2.png](/assets/images/12.21_2.png)
+![12.21_2.png]({{site.baseurl}}/assets/images/12.21_2.png)
 
 - Give the Webhook a Unique name , and copy the Webhook URL and keep it aside for future reference. Click Save.
 
-![12.21_3.png](/assets/images/12.21_3.png)
+![12.21_3.png]({{site.baseurl}}/assets/images/12.21_3.png)
 
 - Navigate to the relevant Service from the Left Pane and click on Create Blank Flow.
 
-![12.21_4.png](/assets/images/12.21_4.png)
+![12.21_4.png]({{site.baseurl}}/assets/images/12.21_4.png)
 
 - Give the flow a name and click Create. Select the Webhook as the Trigger category.
 
-![12.21_5.png](/assets/images/12.21_5.png)
+![12.21_5.png]({{site.baseurl}}/assets/images/12.21_5.png)
 
 - Select the Webhook name from the dropdown and paste the below Json data and click Parse. Save the changes
 
@@ -3389,15 +3389,15 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 "url": "https://www.cisco.com/"
 }
 
-![12.21_6.png](/assets/images/12.21_6.png)
+![12.21_6.png]({{site.baseurl}}/assets/images/12.21_6.png)
 
 - Drag the Email node from the left pane on to the canvas and connect the two nodes.
 
-![12.21_7.png](/assets/images/12.21_7.png)
+![12.21_7.png]({{site.baseurl}}/assets/images/12.21_7.png)
 
 - Open the Email node and enter the Destination ID, From Name, Message and Subject. Click Save.
 
-![12.21_8.png](/assets/images/12.21_8.png)
+![12.21_8.png]({{site.baseurl}}/assets/images/12.21_8.png)
 
 - Save the flow and make live.
 
@@ -3406,43 +3406,43 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 - Login to Webex Contact Centre Management Portal and cross launch Webex Engage from the left side pane.
 
-![12.21_10.png](/assets/images/12.21_10.png)
+![12.21_10.png]({{site.baseurl}}/assets/images/12.21_10.png)
 
 - Click on Groups- --> Default
 
-![12.21_11.png](/assets/images/12.21_11.png)
+![12.21_11.png]({{site.baseurl}}/assets/images/12.21_11.png)
 
 - Click on the Default Team
 
-![12.21_12.png](/assets/images/12.21_12.png)
+![12.21_12.png]({{site.baseurl}}/assets/images/12.21_12.png)
 
 -  Click on Events and Rules and click Add new event.
 
-![12.21_13.png](/assets/images/12.21_13.png)
+![12.21_13.png]({{site.baseurl}}/assets/images/12.21_13.png)
 
 - Enter a unique name, Method, Webhook URL, payload as Key Value pair .
 
-![12.21_14.png](/assets/images/12.21_14.png)
+![12.21_14.png]({{site.baseurl}}/assets/images/12.21_14.png)
 
 - To enter the key Value pair, click on Add Param and enter parameters as shown below.
 
-![12.21_15.png](/assets/images/12.21_15.png)
+![12.21_15.png]({{site.baseurl}}/assets/images/12.21_15.png)
 
 - Repeat the above step to create the url parameter
 
-![12.21_16.png](/assets/images/12.21_16.png)
+![12.21_16.png]({{site.baseurl}}/assets/images/12.21_16.png)
 
 ## 3. Test the Event Trigger
 
 - Login to the agent desktop and initiate a chat session. After accepting the chat session click on the lightning bolt icon to select the trigger and click Next.
 
-![12.21_17.png](/assets/images/12.21_17.png)
+![12.21_17.png]({{site.baseurl}}/assets/images/12.21_17.png)
 
-![12.21_18.png](/assets/images/12.21_18.png)
+![12.21_18.png]({{site.baseurl}}/assets/images/12.21_18.png)
 
 - Enter the email address you want to send the Email to and the url and press Trigger.
 
-![12.21_19.png](/assets/images/12.21_19.png)
+![12.21_19.png]({{site.baseurl}}/assets/images/12.21_19.png)
 
 - Check the recipient’s mailbox to validate the Email has been received successfully.
 
@@ -3502,7 +3502,7 @@ Both variables are transferable between flows. In the second part of this lab in
 
 -   From left column, navigate to “Global Variables”
 
-![Lab12.24.1_GVFirst](/assets/images/Lab12.24.1_GVFirst.png)
+![Lab12.24.1_GVFirst]({{site.baseurl}}/assets/images/Lab12.24.1_GVFirst.png)
 
 -   Create a new OR select an existing Global Variable with the following configurations. For easy tracking of configurations, please use the Attendee ID as part of your global variable name. For example:
 	Name: AttendeeID_GV
@@ -3521,7 +3521,7 @@ Both variables are transferable between flows. In the second part of this lab in
 -   Delete connection between “Queue Task” and “Update Conversation”
 -   Drag the “Set Variable” from the left panel and drop between “Queue Task” and “Update Conversation” nodes and connect them as shown in the video
 
-![Lab12.24.1_GVSecond](/assets/images/Lab12.24.1_GVSecond.png)
+![Lab12.24.1_GVSecond]({{site.baseurl}}/assets/images/Lab12.24.1_GVSecond.png)
 
 -   Configure “Set Variable” with the following:
 
@@ -3543,7 +3543,7 @@ Both variables are transferable between flows. In the second part of this lab in
 
 -   Navigate to “Reporting and Analytics” at the left column of WxCC portal
 
-![Lab12.24.1_GVThird](/assets/images/Lab12.24.1_GVThird.png)
+![Lab12.24.1_GVThird]({{site.baseurl}}/assets/images/Lab12.24.1_GVThird.png)
 
 -   Create a new visualization with the following fields:
 	-   Session ID
@@ -3600,11 +3600,11 @@ To transfer chat form input and Global variable values from inbound chat flow to
 -   Click “Edit” on the top right of the flow
 -   Click on the gear icon at the top right of the screen and navigate to Custom Variables
 - 
-![Lab12.24.3_TxFirst](/assets/images/Lab12.24.3_TxFirst.png)
+![Lab12.24.3_TxFirst]({{site.baseurl}}/assets/images/Lab12.24.3_TxFirst.png)
 
 -   Add the Global variable and Flow variable specific to your configuration (Note that the variables are case-sensitive)
 
-![Lab12.24.3_TxBetweenFirstSecond](/assets/images/Lab12.24.3_TxBetweenFirstSecond.png)
+![Lab12.24.3_TxBetweenFirstSecond]({{site.baseurl}}/assets/images/Lab12.24.3_TxBetweenFirstSecond.png)
 
 -   Next, double-click on the “Extract Task Variables” node and insert the following Javascript under Configuration tab just before the last line (Note: the italized words are specific to your variable name):
 
@@ -3628,23 +3628,23 @@ function extractVariable(varname) {
 var _natureOfRequest_ = extractVariable("_NatureOfRequest_");
 var _davidGV1_ = extractVariable("_DavidGV1_");`
 
-![Lab12.24.3_TxAftBetweenFirstSecond](/assets/images/Lab12.24.3_TxAftBetweenFirstSecond.png)
+![Lab12.24.3_TxAftBetweenFirstSecond]({{site.baseurl}}/assets/images/Lab12.24.3_TxAftBetweenFirstSecond.png)
 
 -   Within the same “Extract Task Variables” node, navigate to the second option “Transition Actions (Optional)” and add the Custom variables under “Time: On-leave” and “Action: Set variable” created above to the extracted Global and Flow variables:
 - 
-![Lab12.24.3_TxSecond](/assets/images/Lab12.24.3_TxSecond.png)
+![Lab12.24.3_TxSecond]({{site.baseurl}}/assets/images/Lab12.24.3_TxSecond.png)
 
 -   Scroll down the same page and add both variables to the Debug Log for troubleshooting purposes if required.
 -   Save the settings and double-click on the Screen Pop node
 -   Add the following under “Query Parameters”:
 
-![Lab12.24.3_TxThird](/assets/images/Lab12.24.3_TxThird.png)
+![Lab12.24.3_TxThird]({{site.baseurl}}/assets/images/Lab12.24.3_TxThird.png)
 
 -   Save and make the flow live.
 -   Start a new chat session and observe the Screen Pop address bar upon Agent Desktop accepting the chat session. Both Global and Flow variables from the channel specific inbound chat flow are transfered to the routed flow.
 
 
-![Lab12.24.3_TxLast](/assets/images/Lab12.24.3_TxLast.png)
+![Lab12.24.3_TxLast]({{site.baseurl}}/assets/images/Lab12.24.3_TxLast.png)
 
 
 # **Providing Digital Channels feedback**
