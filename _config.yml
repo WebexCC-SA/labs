@@ -10,7 +10,7 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url: 'https://webexcc-sa.github.io'
-baseurl: '/webexcc.labs'
+baseurl: '/labs'
 
 rss:              RSS
 
