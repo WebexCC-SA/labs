@@ -270,7 +270,7 @@ Bulk Operations are available for the following configuration object types:
 
 - Click **_Create Bulk Operations_** button in the right upper corner.
 
-![Bulk Menue](/assets/images/Bulk-1.gif)
+![Bulk Menue]({{site.baseurl}}/assets/images/Bulk-1.gif)
 
 - In Step 1 select the configuration object **_Team_** in the drop-down list.
 
@@ -320,7 +320,7 @@ xxxx_team2,pod110_Site,AGENT,pod110_MMP,,,,Global Layout
 
 - Download the Webex app from **[https://www.webex.com/downloads.html](https://www.webex.com/downloads.html){:target="\_blank"}**.
 
-![Webex App](/assets/images/Lab1-AD-1.png)
+![Webex App]({{site.baseurl}}/assets/images/Lab1-AD-1.png)
 
 - Install the application on your PC/Mac.
 
@@ -347,7 +347,7 @@ xxxx_team2,pod110_Site,AGENT,pod110_MMP,,,,Global Layout
 
 - Make sure that you are successfully logged in to the Agent Desktop.
 
-![Agent Sign In](/assets/images/AG-2.gif)
+![Agent Sign In]({{site.baseurl}}/assets/images/AG-2.gif)
 
 
 
@@ -367,51 +367,51 @@ Now you can continue with Lab 2 or try the bonus SSO task below.
 
 - Select SAML as the identity provider and click Next.
 
-![SSO1](/assets/images/SSO/1.png)
+![SSO1]({{site.baseurl}}/assets/images/SSO/1.png)
 
 -  Choose the self signed by Cisco certificate and download the metadata and click Next.
 
-![SSO2](/assets/images/SSO/2.png)
+![SSO2]({{site.baseurl}}/assets/images/SSO/2.png)
 
 - Sign in to the Okta Tenant (example.okta.com, where example is your company or organization name) as an administrator, go to Applications, and then click Browse App Catalog. Search for "Cisco Webex" and add the application to your tenant.
 
-![SSO4](/assets/images/SSO/4.png)
+![SSO4]({{site.baseurl}}/assets/images/SSO/4.png)
 
 - Click Next and then click SAML 2.0.
 
 - In your browser, open the metadata file that you downloaded from Control Hub. Copy the URLs for the **entityID** (at the top of the file) and the **assertionConsumerService location** (at the bottom of the file)
 
-![SSO5](/assets/images/SSO/5.png)
-![SSO6](/assets/images/SSO/6.png)
+![SSO5]({{site.baseurl}}/assets/images/SSO/5.png)
+![SSO6]({{site.baseurl}}/assets/images/SSO/6.png)
 
 -On the **Cisco Webex** tab in Okta, click on **Sign On** and then click on edit.Scroll to **Advanced Sign-on Settings**, and then paste the Entity ID and Assertion Consumer Service values that you copied from the Control Hub metadata file and then save changes.
 
-![SSO7](/assets/images/SSO/7.png)
+![SSO7]({{site.baseurl}}/assets/images/SSO/7.png)
 
 - Click **Sign On** and then download the Okta metadata file. You'll import this file back into your Control Hub instance
 
-![SSO8](/assets/images/SSO/8.png)
+![SSO8]({{site.baseurl}}/assets/images/SSO/8.png)
 
 
 - Click **Assignments**, choose all the users and any relevant groups that you want to associate with apps and services managed in Control Hub, click **Assign** and then click **Done**.
 
-![SSO9](/assets/images/SSO/9.png)
+![SSO9]({{site.baseurl}}/assets/images/SSO/9.png)
 
 - Return back to Contro Hub.If Control Hub is no longer open in the browser tab, from the customer view in [https://admin.webex.com](https://admin.webex.com/), go to Management > Organization Settings, scroll to Authentication, and then choose Actions > Import Metadata
 
 - On the Import IdP Metadata page, either drag and drop the IdP metadata file onto the page or use the file browser option to locate and upload the metadata file. Click Next.
 
-![SSO10](/assets/images/SSO/10.png)
+![SSO10]({{site.baseurl}}/assets/images/SSO/10.png)
  - At the next page just click Next
 
 - Select **Test SSO setup**, and when a new browser tab opens, authenticate with the IdP by signing in.
 
-![SSO12](/assets/images/SSO/12.png)
+![SSO12]({{site.baseurl}}/assets/images/SSO/12.png)
 
 
 - Return to the Control Hub browser tab. If the test was successful, select Successful test. Turn on SSO and click Next.
 
-![SSO13](/assets/images/SSO/13.png)
+![SSO13]({{site.baseurl}}/assets/images/SSO/13.png)
 
 ***Congratulations! You have successfully turned on SSO for your tenant***
 
@@ -420,4 +420,4 @@ Now you can continue with Lab 2 or try the bonus SSO task below.
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>

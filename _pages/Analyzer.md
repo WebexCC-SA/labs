@@ -42,7 +42,7 @@ Enter your attendee ID below and click on `SAVE`. This will update any relevant 
       <input type="text" name="attendee-id" id="attendee-id" />
       <button type="submit" id="save">SAVE</button>
 </form>
-<script src="/assets/gitbook/form.js"></script>
+<script src="{{site.baseurl}}/assets/gitbook/form.js"></script>
 
 > **NOTE:** the **Attendee ID** should be provided with the admin credentionals. You can share your tenant and dial number with your colleagues so they can do the configuration in parallel. In that case, the **Attendee ID** is the same for all of you, but you can add a sub prefix with the number. \_Ex: attendeeID**1**\_MMP, attendeeID**2**\_MMP, etc.
 > {: .block-tip }
@@ -52,13 +52,13 @@ Enter your attendee ID below and click on `SAVE`. This will update any relevant 
 - To complete all the exercises of this lab, you need to have a `Supervisor` user, an `Agent` user as well as an `Administrator` user created.
   The administrator user should be already provided to you, while the supervisor and agent users should already be created in Lab 1.
 
-  - If you have not create these users yet, please follow the steps from [Lab 1 - Admin Experience](https://webexcc.github.io/pages/CH/#control-hub-user-management-task) to create both of them.
+  - If you have not create these users yet, please follow the steps from [Lab 1 - Admin Experience]({{site.baseurl}}/pages/CH/#control-hub-user-management-task) to create both of them.
 
-- For `Lab 5` exercises, we will need to generate some data that include global variables, callback requests as well as preferred agent routing. To do so, a flow template named `AnalyzerLab_Flow` has been created (If you do not have the flow, you can download it from [here](https://webexcc.github.io/assets/files/AnalyzerLab_Flow.json) ). To create your own flow based on that and generate data, please do the following steps:
+- For `Lab 5` exercises, we will need to generate some data that include global variables, callback requests as well as preferred agent routing. To do so, a flow template named `AnalyzerLab_Flow` has been created (If you do not have the flow, you can download it from [here]({{site.baseurl}}/assets/files/AnalyzerLab_Flow.json) ). To create your own flow based on that and generate data, please do the following steps:
 
   - Go to `Admin Portal -> Routing Strategy -> Flows`.
 
-  - Click on the dots ![Dots](/assets/images/Analyzer/dots.png)icon next to the `AnalyzerLab_Flow` and click on `Copy`.
+  - Click on the dots ![Dots]({{site.baseurl}}/assets/images/Analyzer/dots.png)icon next to the `AnalyzerLab_Flow` and click on `Copy`.
 
   - Open the newly copied flow.
 
@@ -75,17 +75,17 @@ Enter your attendee ID below and click on `SAVE`. This will update any relevant 
   - Map this flow with your Entry Point and make a few test calls.
     - Make sure to make at least one normal call (Agent available & Answers), one callback call (Agent idle, press 1 to prompt for callback and then make agent available to receive the callback) and one preferred agent routing (agent idle, press 2, then make agent available).
 
-- `Lab 5 - Data Reporting for Digital Channels`, we will need digital channel (Chat, Email or Social) data to be generated first. However, as Digital Channels is on a later lab ([Lab 12](https://webexcc.github.io/pages/Digital/)), you can skip this specific exercise until some digital data is generated on your tenant to report on.
+- `Lab 5 - Data Reporting for Digital Channels`, we will need digital channel (Chat, Email or Social) data to be generated first. However, as Digital Channels is on a later lab ([Lab 12]({{site.baseurl}}/pages/Digital/)), you can skip this specific exercise until some digital data is generated on your tenant to report on.
 
 - For `Lab 6 - Embedding the report in the Agent Desktop`, you will need to update the Desktop Layout of your supervisor user, so a unique User Profile needs to be created and linked to your Supervisor user. To achieve this, complete the following steps.
 
   1. In [Admin Portal](https://portal.wxcc-us1.cisco.com/), go to `Provisioning -> User Profiles`.
 
-  2. Fine the profile named `Supervisor_Analyzer`. Click on the dots ![Dots](/assets/images/Analyzer/dots.png) on the left of the line and then click on `Copy` ![Copy](/assets/images/Analyzer/Copy.png).
+  2. Fine the profile named `Supervisor_Analyzer`. Click on the dots ![Dots]({{site.baseurl}}/assets/images/Analyzer/dots.png) on the left of the line and then click on `Copy` ![Copy]({{site.baseurl}}/assets/images/Analyzer/Copy.png).
 
   3. Change the `Name` of the User Profile to <w class = "attendee-class">attendee-id</w>Supervisor_Analyzer (based on your attendee ID) and `Save`.
 
-  4. Navigate to `Provisioning -> Users`. Search for your **supervisor** user, click on the dots ![Dots](/assets/images/Analyzer/dots.png) on the left of the line and then click on `Edit`.
+  4. Navigate to `Provisioning -> Users`. Search for your **supervisor** user, click on the dots ![Dots]({{site.baseurl}}/assets/images/Analyzer/dots.png) on the left of the line and then click on `Edit`.
 
   5. Change the `User Profile` of that user to the one you just created and then click on `Save`.
 
@@ -109,7 +109,7 @@ This lab is designed to give you basic understanding of Analyzer, `user interfac
 
 ## 1. Portal Dashboards
 
-1. Login to the `Webex CC Administration Portal` using the Portal link. Login using your created supervisor user from [Lab 1](https://webexcc.github.io/pages/CH/#control-hub-user-management-task).
+1. Login to the `Webex CC Administration Portal` using the Portal link. Login using your created supervisor user from [Lab 1]({{site.baseurl}}/pages/CH/#control-hub-user-management-task).
 
 2. Navigate through the various dashboards via the dropdown to see current tenant information and to familiarize yourself with the four different dashboard views.
 
@@ -123,7 +123,7 @@ This lab is designed to give you basic understanding of Analyzer, `user interfac
 
 4. Return to the `Entry Point - Site Level Dashboard` and complete some navigation exercises:
    - In `Site Interval Realtime - Chart` report, filter calls for **Inbound Connected Count** (by clicking on profile variable next to the gear icon)
-   - Click on ![Expand](/assets/images/Analyzer/Expand.png) to open `Entry Point Contact Volume – Chart` report in a separate window.
+   - Click on ![Expand]({{site.baseurl}}/assets/images/Analyzer/Expand.png) to open `Entry Point Contact Volume – Chart` report in a separate window.
    - Try the **Duration** filter on top right.
    - Open `Incoming, Short Contacts - Entry Point` report in separate browser tab and **export** the Data as **_Excel_**.
 
@@ -142,12 +142,12 @@ This lab is designed to give you basic understanding of Analyzer, `user interfac
 
 5. Then, navigate to the path `Stock Reports > Real-Time Reports > Agent Reports > Interval Reports`.
 
-   - Click ![Grid](/assets/images/Analyzer/grid.png) to change the view to List view.
+   - Click ![Grid]({{site.baseurl}}/assets/images/Analyzer/grid.png) to change the view to List view.
    - Here you can sort the reports based on a specific header by clicking on it.
    - Notice the `Temporal Scope`, which can be either Realtime or Historical.
    - <ins>ID is unique for every report and a report can also be searched by its ID.</ins>
 
-6. Click the ![Dots](/assets/images/Analyzer/dots.png) icon next to the report and then click on Details.
+6. Click the ![Dots]({{site.baseurl}}/assets/images/Analyzer/dots.png) icon next to the report and then click on Details.
 
    - Make a note of the `Date Range` and `Scheduled Jobs`.
    - Try the same for any Historical stock report. <br>
@@ -208,7 +208,7 @@ This lab is designed to give you a basic understanding of `stock visualizations`
 
 2. Review the below Stock report structure.
 
-![StockStructure](/assets/images/Analyzer/StockStructure.png)
+![StockStructure]({{site.baseurl}}/assets/images/Analyzer/StockStructure.png)
 
 3. Search for and execute the `Agent Details` report.
 
@@ -226,7 +226,7 @@ This lab is designed to give you a basic understanding of `stock visualizations`
 
 7. Drag all `Row segments` fields except **_Agent name_** and **_Interval_** to the `Hidden Segments` section.
 
-8. Also, by Clicking the Eye ![eye](/assets/images/Analyzer/eye.png) symbol, hide the `Initial Log In Time` and `Final Log Out Time` fields.
+8. Also, by Clicking the Eye ![eye]({{site.baseurl}}/assets/images/Analyzer/eye.png) symbol, hide the `Initial Log In Time` and `Final Log Out Time` fields.
 
 9. Now, click again the `Settings` to hide Row and Profile variables.
 
@@ -276,7 +276,7 @@ In this exercise we will copy a stock report to create a new custom report. The 
 
 **_Tips:How to search for the right report to match your requirements?_** <ins>There are three ways</ins> :
 
-1. Go into the `Stock Report Directory` structure (Step 2 in exercise [2.1](https://webexcc.github.io/pages/Analyzer/#1-execute-stock-reports)) and look for something similar, e.g. we are looking for a `Historical -> Multimedia Report`.
+1. Go into the `Stock Report Directory` structure (Step 2 in exercise [2.1]({{site.baseurl}}/pages/Analyzer/#1-execute-stock-reports)) and look for something similar, e.g. we are looking for a `Historical -> Multimedia Report`.
 2. Search for keywords matching your desired report data, e.g. search for `Service level`.
 3. Search in the `Analyzer User Guide` for the data point and identify the report.
 
@@ -316,7 +316,7 @@ Based on the data inside that report, we need to do the following steps:
 
 # Understanding Data and Creating Custom Visualizations
 
-![DataRepos](/assets/images/Analyzer/DataRepos.png)
+![DataRepos]({{site.baseurl}}/assets/images/Analyzer/DataRepos.png)
 
 There are 4 key `repositories` that we will learn about in this chapter:
 
@@ -368,7 +368,7 @@ In this exercise, you will spend some time understanding the Webex Contact Cente
 
 8. `Preview` the Report.
 
-9. Next click on any session ID, then click on `Zoom` icon ![Zoom](/assets/images/Analyzer/zoom.png).
+9. Next click on any session ID, then click on `Zoom` icon ![Zoom]({{site.baseurl}}/assets/images/Analyzer/zoom.png).
 
 10. Make a note of all the Call Activities during this session (Call Activity Records).
 
@@ -455,9 +455,9 @@ To create a report with all the above requirements, we need to complete the foll
    - Search for Profile variable Measure `Activity Start Timestamp`.
    - Under formula, select `Minimum Activity Start Timestamp` and save it.
    - **Right click** on the field and click `New Formula`.
-   - Name it `Duration`, swap the fields by clicking ![Swap](/assets/images/Analyzer/swap.png).
+   - Name it `Duration`, swap the fields by clicking ![Swap]({{site.baseurl}}/assets/images/Analyzer/swap.png).
    - Click on the empty field and select `Current Timestamp`.
-   - Select `Subtraction` operator ![Substract](/assets/images/Analyzer/substract.png).
+   - Select `Subtraction` operator ![Substract]({{site.baseurl}}/assets/images/Analyzer/substract.png).
    - Right click the `Duration` profile variable, and set the `Duration Number Format` as **Duration > MM:SS**.
    - `Hide` Minimum Activity Start Timestamp.
 
@@ -662,13 +662,13 @@ There are additionally **3 new stock reports**:
 
 In this exercise, you will see how Queue based data is different from Contact Session and Contact Activity Data and how you can use Queue based reports to capture more precise insights for your contact center at the queue level which help with more accurate and predictive actions.
 
-Before continuing with this exercise make, sure you have made some test calls and used `Preferred Agent Routing` to handle the calls (Refer to instructions on [Pre-requisites](https://webexcc.github.io/pages/Analyzer/)).
+Before continuing with this exercise make, sure you have made some test calls and used `Preferred Agent Routing` to handle the calls (Refer to instructions on [Pre-requisites]({{site.baseurl}}/pages/Analyzer/)).
 
 In this exercise you will notice how data are captured across 3 different types of repositories: Customer Session Record (CSR) , Customer Activity Record (CAR) and Queue Record and how `Queue Record` offers much clear data points for contact center.
 
-![Queue1](/assets/images/Analyzer/Queue1.png)
+![Queue1]({{site.baseurl}}/assets/images/Analyzer/Queue1.png)
 
-![Queue2](/assets/images/Analyzer/Queue2.png)
+![Queue2]({{site.baseurl}}/assets/images/Analyzer/Queue2.png)
 
 Follow the steps below to complete this exercise:
 
@@ -678,7 +678,7 @@ Follow the steps below to complete this exercise:
 
 3. Make a Note of Call session along with the Queue Name and capture in this document (For future use).
 
-4. Next Click on any Session Id and click on Zoom ![Zoom](/assets/images/Analyzer/zoom.png) to drill down into the Session.
+4. Next Click on any Session Id and click on Zoom ![Zoom]({{site.baseurl}}/assets/images/Analyzer/zoom.png) to drill down into the Session.
 
 5. Here, makes a note of all the Activities for this session and make a note of the Queue name across various activities (Click on Next page at the bottom if applicable).
 
@@ -755,7 +755,7 @@ Besides voice data, Analyzer reporting offers similar insights on **_digital cha
 
 In this Exercise, you will explore the available stock reports for Digital Channel reporting as well as create your own custom visualization, capturing some data from the non-voice conversations.
 
-- Before continuing with the exercise, make sure to create some test digital interactions. If you do not have any digital interactions created, you can skip this exercise until you complete [Lab 12 - Digital Channels](https://webexcc.github.io/pages/Digital/).
+- Before continuing with the exercise, make sure to create some test digital interactions. If you do not have any digital interactions created, you can skip this exercise until you complete [Lab 12 - Digital Channels]({{site.baseurl}}/pages/Digital/).
 
 1. Stock visualizations for multiple channels are available inside the `Multimedia Reports` folders.
 
@@ -868,7 +868,7 @@ In many cases, it’s not only supervisors or administrators but also agents tha
 
 1. If not already logged in to the Agent Desktop, open a new window and **login** with your agent user.
 
-2. On the left-hand side menu, select the `APS` icon ![APS](/assets/images/Analyzer/APS.png).
+2. On the left-hand side menu, select the `APS` icon ![APS]({{site.baseurl}}/assets/images/Analyzer/APS.png).
 
 3. Within APS, there are multiple tabs of data. Navigate through the APS dashboards available in the Agent Desktop.
 
@@ -876,7 +876,7 @@ In many cases, it’s not only supervisors or administrators but also agents tha
 
 5. Choose different options in the `Team Name`, `Queue Name`, `Channel Type` filters. Notice that the data on the screen updates.
 
-6. The tabs inside the APS reports are **_persistent_**, i.e. the agent desktop will remember the last tab you visited if you navigate away to the home screen or any other page. Select the `Queue Stats – Realtime` tab. Then, click the `Home` tab ![AgentHome](/assets/images/Analyzer/AgentHome.png) on the left side.
+6. The tabs inside the APS reports are **_persistent_**, i.e. the agent desktop will remember the last tab you visited if you navigate away to the home screen or any other page. Select the `Queue Stats – Realtime` tab. Then, click the `Home` tab ![AgentHome]({{site.baseurl}}/assets/images/Analyzer/AgentHome.png) on the left side.
 
 7. Go back to the APS tab. You will notice that the `Queue Stats – Realtime` is the default tab in your APS viewer.
 
@@ -900,7 +900,7 @@ Analyzer is a premium functionality which is only accessible for Supervisors or 
 
 2. Now, download and open the below custom desktop layout file provided to you.
 
-   [Custom Desktop Layout JSON File](/assets/images/Analyzer/CustomDesktopLayout_v1.json)
+   [Custom Desktop Layout JSON File]({{site.baseurl}}/assets/images/Analyzer/CustomDesktopLayout_v1.json)
 
 3. Go to the Line 114 or look for `src` and paste the dashboard link from step 1 as src value.
 
@@ -910,7 +910,7 @@ Analyzer is a premium functionality which is only accessible for Supervisors or 
 
 6. Go to `Desktop Layout` under Provisioning.
 
-7. Click on the dots ![Dots](/assets/images/Analyzer/dots.png) and then Copy the layout and name it as <w class = "attendee-class">attendee-id</w>\_DesktopLayout, based on your attendee ID.
+7. Click on the dots ![Dots]({{site.baseurl}}/assets/images/Analyzer/dots.png) and then Copy the layout and name it as <w class = "attendee-class">attendee-id</w>\_DesktopLayout, based on your attendee ID.
 
 8. Upload the saved file in step 4 and save the desktop layout.
 
@@ -920,7 +920,7 @@ Analyzer is a premium functionality which is only accessible for Supervisors or 
 
 11. Under `Advanced settings -> Desktop Layout`, select your newly created personalized desktop layout and save the Team.
 
-12. Now refresh the agent desktop, you will notice `Analyzer iFrame Widget` on the agent desktop ![DesktopWidget](/assets/images/Analyzer/DesktopWidget.png).
+12. Now refresh the agent desktop, you will notice `Analyzer iFrame Widget` on the agent desktop ![DesktopWidget]({{site.baseurl}}/assets/images/Analyzer/DesktopWidget.png).
 
 13. Click on it and you will see the dashboard loading on agent desktop!
 
@@ -944,9 +944,9 @@ You can **_export or import visualizations_** as a single file or as folders con
 
 For this exercise, you need to login in the Analyzer portal in a separate browser or incognito window with your **administrator user**. Also, you will need to download the zip file below named **_ImportZIP_**.
 
-[ImportZIP](/assets/images/Analyzer/Analyzer_Import.zip)
+[ImportZIP]({{site.baseurl}}/assets/images/Analyzer/Analyzer_Import.zip)
 
-1. Go to the `Visualizations` tab, click on the ellipsis ![Ellipsis](/assets/images/Analyzer/Ellipsis.png) on the right of your student folder and click `Export Templates`. Confirm by clicking `Export` on the popup window.
+1. Go to the `Visualizations` tab, click on the ellipsis ![Ellipsis]({{site.baseurl}}/assets/images/Analyzer/Ellipsis.png) on the right of your student folder and click `Export Templates`. Confirm by clicking `Export` on the popup window.
 
 2. Zip file with the templates of all the created visualizations will be downloaded on your computer. **_Note: During export, the filter names are retained but the values are not, thus filter values are blank after export and need to be re-configured._**
 
@@ -970,7 +970,7 @@ In this exercise we will learn how to **_schedule visualizations_** within Analy
 
 1. Find the report `2.3_Queue Service Level` report that we created previously from your student folder.
 
-2. Next, in the right-hand corner of the report, select the three ellipsis ![Ellipsis](/assets/images/Analyzer/Ellipsis.png) and, from the dropdown, select the option `Schedule Job`.
+2. Next, in the right-hand corner of the report, select the three ellipsis ![Ellipsis]({{site.baseurl}}/assets/images/Analyzer/Ellipsis.png) and, from the dropdown, select the option `Schedule Job`.
 
 3. Fill in the schedule information for the scheduled report.
 
@@ -1008,9 +1008,9 @@ In this exercise we will learn how to **_schedule visualizations_** within Analy
 
 9. Check your email after a few minutes to verify that you got the alert.
 
-10. Next, in Analyzer, check your threshold alerts on the top-right. You should see an alert notification ![ThresholdAlert](/assets/images/Analyzer/ThresholdAlert.png). Click on `Threshold Alerts`.
+10. Next, in Analyzer, check your threshold alerts on the top-right. You should see an alert notification ![ThresholdAlert]({{site.baseurl}}/assets/images/Analyzer/ThresholdAlert.png). Click on `Threshold Alerts`.
 
-11. Next, acknowledge this threshold alert by checking the box next to the alert ![MarkAsRead](/assets/images/Analyzer/MarkAsRead.png) and clicking `Mark as Read`.
+11. Next, acknowledge this threshold alert by checking the box next to the alert ![MarkAsRead]({{site.baseurl}}/assets/images/Analyzer/MarkAsRead.png) and clicking `Mark as Read`.
 
 12. Lastly, you will notice that the threshold alert also gives ability to filter on (1) Notification Types (2) Duration and (3) Entity Type as well as the option to turn off the auto refresh function. You can also switch between Realtime and Historical Alerts, to view any past alerts in the system.
 
@@ -1026,10 +1026,10 @@ Additionally to the [Developer Documentation](https://developer.webex-cx.com/doc
 
 - Navigate through both of these links to familiarize yourself with the Data API capabilities in Webex Contact Center.
 
-To learn everything about Reporting and Search APIs, you can follow and complete [Lab 11](https://webexcc.github.io/pages/API/#all-new-webex-contact-center-apis-new-version).
+To learn everything about Reporting and Search APIs, you can follow and complete [Lab 11]({{site.baseurl}}/pages/API/#all-new-webex-contact-center-apis-new-version).
 
 ---
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
       
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>

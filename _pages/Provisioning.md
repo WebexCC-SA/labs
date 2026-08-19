@@ -51,7 +51,7 @@ This video demonstrates how to create a new Customer organization by using Provi
 	<iframe src="https://app.vidcast.io/share/embed/425661cc-0d89-4d4a-a7a0-6dcc2604de63" width="100%" height="100%" title="RTMS Launch" frameborder="0" loading="lazy" allowfullscreen style="position:absolute; top:0; left: 0"></iframe>
 </div>
 
-RTMS PDF: [RTMS GA Launch.pdf](https://webexcc.github.io/files/RTMS%20GA%20Launch.pdf)
+RTMS PDF: [RTMS GA Launch.pdf]({{site.baseurl}}/files/RTMS%20GA%20Launch.pdf)
 
 
 >RTMS is a media processing layer for Webex Contact Center customers. This video will discuss what RTMS regional media is, how it fits into the existing Webex Contact Center ecosystem, the customer activation process and configuration of regional media.
@@ -60,7 +60,7 @@ RTMS PDF: [RTMS GA Launch.pdf](https://webexcc.github.io/files/RTMS%20GA%20Launc
 	<iframe src="https://app.vidcast.io/share/embed/5db4d59a-e80a-465a-b254-574afa969893" width="100%" height="100%" title="RTMS Regional Media" frameborder="0" loading="lazy" allowfullscreen style="position:absolute; top:0; left: 0"></iframe>
 </div>
 
-RTMS Regional Media PDF: [RTMS EA Regional Media.pdf](https://webexcc.github.io/files/RTMS%20EA%20Regional%20Media.pdf)
+RTMS Regional Media PDF: [RTMS EA Regional Media.pdf]({{site.baseurl}}/files/RTMS%20EA%20Regional%20Media.pdf)
 
 # Webex Contact Center Developer Sandbox
 A Contact Center Developer Sandbox provides you with administrator access to a licensed Webex organization. A licensed org lets you create and test capabilities of the Webex platform not available with Webex free plans.
@@ -70,6 +70,5 @@ To get started with a Sandbox please follow the instructions in [Contact Center 
 
 <p style="text-align:center"><strong>Congratulations, you have completed this lab! You can continue with the next one.</strong></p>
 		
-<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>	
+<p style="text-align:center;"><img src="{{site.baseurl}}/assets/gitbook/images/webex.png" width="100"></p>
 	
-
